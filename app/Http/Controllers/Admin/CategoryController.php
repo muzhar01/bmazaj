@@ -114,7 +114,10 @@ class CategoryController extends Controller
     public function destroy(Category $category,$id)
     {
         $model=Category::find($id);
-        
+        $filePathName =public_path('/storage/media/category/'.$model->image);
+        if( $filePathName ){
+            unlink($filePathName);
+        }
         if($model->delete()){
             session()->flash('success','Deleted Successfully');
             return redirect('admin/category');
