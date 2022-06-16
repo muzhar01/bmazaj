@@ -7,26 +7,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 class AdminController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('admin/login');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function auth(Request $request)
     {
         $email=$request->post('email');
         $password=$request->post('password');
-        // $result=Admin::where(['email'=>$email,'password'=>$password])->get();
         $result=Admin::where(['email'=>$email])->first();
         if($result){
             if(Hash::check($password,$result->password)){
@@ -43,10 +32,4 @@ class AdminController extends Controller
         }
     }
 
-    // public function update(Admin $admin)
-    // {
-    //     $r=Admin::find(1);
-    //     $r->password=Hash::make('admin');
-    //     $r->save();
-    // }
 }

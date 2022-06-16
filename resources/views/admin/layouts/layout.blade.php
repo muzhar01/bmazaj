@@ -7,7 +7,8 @@
     <title>Admin | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('admin_assets/css/all.min.css') }}">
@@ -16,6 +17,10 @@
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet" href="{{ asset('admin_assets/css/tempusdominus-bootstrap-4.min.css') }}">
     <!-- iCheck -->
+
+    <link rel="stylesheet" href="{{ asset('admin_assets/css/responsive.bootstrap4.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('admin_assets/css/buttons.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin_assets/css/icheck-bootstrap.min.css') }}">
     <!-- JQVMap -->
     <link rel="stylesheet" href="{{ asset('admin_assets/css/jqvmap.min.css') }}">
@@ -27,6 +32,8 @@
     <link rel="stylesheet" href="{{ asset('admin_assets/css/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('admin_assets/css/summernote-bs4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin_assets/css/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('admin_assets/css/custom.css')}}">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -42,10 +49,7 @@
                             class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="{{ url('admin/dashboard') }}" class="nav-link">Home</a>
                 </li>
             </ul>
 
@@ -74,9 +78,9 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-light-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <img src="{{ asset('admin_assets/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
+            <a href="{{ url('admin/dashboard') }}" class="brand-link">
+                <img src="{{ asset('admin_assets/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
+                    class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Welcom Admin</span>
             </a>
 
@@ -89,7 +93,8 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="{{ url('admin/dashboard') }}"
+                                class="nav-link {{ request()->is('*dashboard*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -97,27 +102,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('admin-category') }}"
+                                class="nav-link {{ request()->is('*category*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Manage Category
-                                    <i class="right fas fa-angle-left"></i>
+                                    Category
                                 </p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Main Category</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Sub Category</p>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -135,7 +126,8 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; {{ date('Y') }} <a href="https://admksolutions.com/" target="-blank">Admksoluiton</a>.</strong>
+            <strong>Copyright &copy; {{ date('Y') }} <a href="https://admksolutions.com/"
+                    target="-blank">Admksoluiton</a>.</strong>
             All rights reserved.
         </footer>
 
@@ -180,6 +172,42 @@
     <script src="{{ asset('admin_assets/js/demo.js') }}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="{{ asset('admin_assets/js/dashboard.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/buttons.colVis.min.js') }}"></script>
+
+    <script src="{{ asset('admin_assets/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/buttons.print.min.js') }}"></script>
+
+    <script src="{{ asset('admin_assets/js/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/vfs_fonts.js') }}"></script>
+
+    <script src="{{ asset('admin_assets/js/jszip.min.js') }}"></script>
+    
+    <script src="{{ asset('admin_assets/js/buttons.bootstrap4.min.js')}}"></script>
+    <script src="{{ asset('admin_assets/js/dataTables.buttons.min.js')}}"></script>
+    <script src="{{ asset('admin_assets/js/responsive.bootstrap4.min.js')}}"></script>
+    <script src="{{ asset('admin_assets/js/dataTables.responsive.min.js')}}"></script>
+
+    <script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
 </body>
 
 </html>
