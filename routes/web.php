@@ -25,7 +25,9 @@ Route::get('/', function () {
 Route::get('/admin',[AdminController::class,'index']);
 Route::post('/admin/auth',[AdminController::class,'auth'])->name('admin-auth');
 Route::group(['middleware'=>'admin_auth'],function(){
+    // Dashboard Route //////
     Route::get('admin/dashboard',[AdminDashboard::class,'index']);
+    // Category Route //////
     Route::get('admin/category',[CategoryController::class,'index'])->name('admin-category');
     Route::get('admin/addcategory',[CategoryController::class,'create'])->name('admin-addcategory');
     Route::post('admin/categorysubmit',[CategoryController::class,'store'])->name('admin-category-submit');
@@ -33,10 +35,14 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/category/edit/{id}',[CategoryController::class,'edit']);
     Route::get('admin/category/delete/{id}',[CategoryController::class,'destroy']);
     Route::post('admin/categoryupdate',[CategoryController::class,'update'])->name('admin-category-update');
-
+    // Audio Route //////
     Route::get('admin/audio',[AudioController::class,'index'])->name('admin-audio');
-    Route::get('admin/addaudio',[AudioController::class,'create'])->name('admin-addaudio');
-    Route::post('admin/songaudio',[AudioController::class,'store'])->name('admin-audio-submit');
+    Route::get('admin/add/audio',[AudioController::class,'create'])->name('admin-add-audio');
+    Route::post('admin/audio/submit',[AudioController::class,'store'])->name('admin-audio-submit');
+    Route::get('admin/audio/status/{status}/{id}',[AudioController::class,'status']);
+    Route::get('admin/audio/edit/{id}',[AudioController::class,'edit']);
+    Route::get('admin/audio/delete/{id}',[AudioController::class,'destroy']);
+    Route::post('admin/audio/update',[AudioController::class,'update'])->name('admin-audio-update');
     
 
     Route::get('/admin/logout',[AdminController::class,'logout'])->name('admin-logout');

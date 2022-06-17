@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ url('admin/dashboard') }}">Home</a></li>
-                        <li class="breadcrumb-item active">Add Song</li>
+                        <li class="breadcrumb-item active">Edit Song</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <form action="{{ route('admin-audio-submit') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('admin-audio-update') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="card card-default">
                             <div class="card-header">
@@ -32,7 +32,7 @@
                                     <div class="col-4">
                                         <label for="exampleInputEmail1">Title</label>
                                         <input type="text" name="title" class="form-control"
-                                            placeholder="Category Name">
+                                            placeholder="Category Name" value="{{ $audio->title }}">
                                         @if ($errors->has('title'))
                                             <span class="error">{{ $errors->first('title') }}</span>
                                         @endif
@@ -43,7 +43,7 @@
                                         <select name="category_id" class="form-control" id="">
                                             <option>Select Category</option>
                                             @foreach ($category as $cat)
-                                                <option value="{{ $cat->id }}">{{ Str::ucfirst($cat->name) }}</option>
+                                                <option value="{{ $cat->id }}" @php if($cat->id==$audio->category_id) echo "selected";else echo''; @endphp>{{ Str::ucfirst($cat->name) }}</option>
                                             @endforeach
                                         </select>
                                         @if ($errors->has('category_id'))
@@ -56,29 +56,25 @@
                                         @if ($errors->has('thumbnail'))
                                             <span class="error">{{ $errors->first('thumbnail') }}</span>
                                         @endif
+                                        @if($audio->thumbnail)
+                                        <img src="{{ asset('/storage/media/audio/'. $audio->thumbnail) }}" width="100px" height="100px" alt="">
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-4">
                                         <label for="exampleInputEmail1">Link</label>
                                         <input type="text" name="link" class="form-control"
-                                            placeholder="Link">
+                                            placeholder="Link"  value="{{ $audio->link }}">
                                         @if ($errors->has('link'))
                                             <span class="error">{{ $errors->first('link') }}</span>
-                                        @endif
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="exampleInputEmail1">Audio</label>
-                                        <input type="file" name="audio" class="form-control">
-                                        @if ($errors->has('audio'))
-                                            <span class="error">{{ $errors->first('audio') }}</span>
                                         @endif
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
                                         <label for="exampleInputEmail1">Description</label>
-                                        <textarea name="description" class="form-control" rows="5"></textarea>
+                                        <textarea name="description" class="form-control" rows="5"> {{ $audio->description }}</textarea>
                                         @if ($errors->has('description'))
                                             <span class="error">{{ $errors->first('description') }}</span>
                                         @endif
