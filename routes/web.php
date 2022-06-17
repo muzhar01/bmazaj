@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminDashboard;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\AudioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,11 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/category/edit/{id}',[CategoryController::class,'edit']);
     Route::get('admin/category/delete/{id}',[CategoryController::class,'destroy']);
     Route::post('admin/categoryupdate',[CategoryController::class,'update'])->name('admin-category-update');
+
+    Route::get('admin/audio',[AudioController::class,'index'])->name('admin-audio');
+    Route::get('admin/addaudio',[AudioController::class,'create'])->name('admin-addaudio');
+    Route::post('admin/songaudio',[AudioController::class,'store'])->name('admin-audio-submit');
+
 });
 Auth::routes();
 

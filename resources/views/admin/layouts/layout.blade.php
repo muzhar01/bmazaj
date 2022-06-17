@@ -110,6 +110,15 @@
                                 </p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin-song') }}"
+                                class="nav-link {{ request()->is('*songs*') ? 'active' : '' }}">
+                                <i class="nav-icon fa fa-volume-up"></i>
+                                <p>
+                                    Audio
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
