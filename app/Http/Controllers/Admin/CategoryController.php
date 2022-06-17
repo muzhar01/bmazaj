@@ -42,7 +42,7 @@ class CategoryController extends Controller
             $request->session()->flash('success','Category Added Successfully');
             return redirect('admin/category');
         }else{
-            $request->session()->flash('error','Category Added Successfully');
+            $request->session()->flash('error','Failed to Add');
             return redirect('admin/category');
         }
     }
