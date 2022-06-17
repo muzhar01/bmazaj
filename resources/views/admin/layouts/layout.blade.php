@@ -66,7 +66,7 @@
                             <i class="fas fa-user mr-2"></i> Profile
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
+                        <a href="{{ route('admin-logout') }}" class="dropdown-item">
                             <i class="fas fa-lock mr-2"></i> Logout
                         </a>
                     </div>
@@ -111,7 +111,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin-song') }}"
+                            <a href="{{ route('admin-audio') }}"
                                 class="nav-link {{ request()->is('*songs*') ? 'active' : '' }}">
                                 <i class="nav-icon fa fa-volume-up"></i>
                                 <p>

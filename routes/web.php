@@ -37,7 +37,9 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/audio',[AudioController::class,'index'])->name('admin-audio');
     Route::get('admin/addaudio',[AudioController::class,'create'])->name('admin-addaudio');
     Route::post('admin/songaudio',[AudioController::class,'store'])->name('admin-audio-submit');
+    
 
+    Route::get('/admin/logout',[AdminController::class,'logout'])->name('admin-logout');
 });
 Auth::routes();
 

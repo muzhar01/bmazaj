@@ -34,7 +34,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('admin-category') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
                 <!-- ./col -->
@@ -44,7 +44,7 @@
                         <div class="inner">
                             <h3>53</h3>
 
-                            <p>Subscribers</p>
+                            <p>Total Audio</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-stats-bars"></i>
@@ -59,7 +59,7 @@
                         <div class="inner">
                             <h3>44</h3>
 
-                            <p>Earning</p>
+                            <p>Subscribers</p>
                         </div>
                         <div class="icon">
                             <i class="ion ion-person-add"></i>

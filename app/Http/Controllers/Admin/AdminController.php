@@ -20,7 +20,7 @@ class AdminController extends Controller
         if($result){
             if(Hash::check($password,$result->password)){
                 $request->session()->put('ADMIN_LOGIN',true);
-                $request->session()->put('ADMIN_Id',$result->id);
+                $request->session()->put('ADMIN_ID',$result->id);
                 return redirect('admin/dashboard');
             }else{
                 $request->session()->flash('error','Please enter valid password');
@@ -30,6 +30,13 @@ class AdminController extends Controller
             $request->session()->flash('error','Please enter valid email');
             return redirect('/admin');
         }
+    }
+    public function logout(){
+        session()->forget('ADMIN_LOGIN');
+        session()->forget('ADMIN_ID');
+        session()->flash('success','Logout successfully');
+        return redirect('/admin');
+
     }
 
 }
