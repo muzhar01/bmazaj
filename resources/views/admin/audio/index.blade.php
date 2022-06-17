@@ -69,7 +69,7 @@
                                         <td>{{ $list->description }}</td>
                                         <td>
                                           <audio controls>
-                                            <source src="{{ asset('/public/media/audio/file/'.$list->audio) }}">
+                                            <source src="{{ asset('/storage/media/audio/file/'.$list->audio) }}">
                                           </audio>
                                         </td>
                                         <td>
