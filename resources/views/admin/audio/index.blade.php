@@ -68,7 +68,7 @@
                                         <td><img src="{{ asset('/storage/media/audio/'. $list->thumbnail) }}" height="100px" width="100px" alt=""></td>
                                         <td>{{ $list->description }}</td>
                                         <td>
-                                          <audio controls>
+                                          <audio controls controlsList="nodownload">
                                             <source src="{{ asset('/storage/media/audio/file/'.$list->audio) }}">
                                           </audio>
                                         </td>
