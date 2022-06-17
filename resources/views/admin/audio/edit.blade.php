@@ -70,6 +70,20 @@
                                             <span class="error">{{ $errors->first('link') }}</span>
                                         @endif
                                     </div>
+                                    <div class="col-4">
+                                        <label for="exampleInputEmail1">Audio</label>
+                                        <input type="file" name="audio" class="form-control">
+                                        @if ($errors->has('audio'))
+                                            <span class="error">{{ $errors->first('audio') }}</span>
+                                        @endif
+                                    </div>
+                                    <div class="col-4">
+                                      @if($audio->audio)
+                                      <audio controls controlsList="nodownload">
+                                        <source src="{{ asset('/storage/media/audio/file/'.$audio->audio) }}">
+                                      </audio>
+                                      @endif
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
