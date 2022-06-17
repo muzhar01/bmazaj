@@ -21,6 +21,14 @@
     <div class="card-header text-center">
       <a href="javascript:;" class="h1"><b>Admin</b>LOGIN</a>
     </div>
+    @if(session()->has('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      {{ session('success') }}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    @endif
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
