@@ -41,6 +41,9 @@ Route::group(['middleware'=>'admin_auth'],function(){
 
     Route::get('/admin/logout',[AdminController::class,'logout'])->name('admin-logout');
 });
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/playlist/{id}', [App\Http\Controllers\FrontController::class, 'playlist'])->name('playlist');
