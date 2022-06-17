@@ -81,7 +81,7 @@
             <a href="{{ url('admin/dashboard') }}" class="brand-link">
                 <img src="{{ asset('admin_assets/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Welcom Admin</span>
+                <span class="brand-text font-weight-light">Welcome Admin</span>
             </a>
 
             <!-- Sidebar -->
@@ -111,7 +111,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin-song') }}"
+                            <a href="{{ route('admin-audio') }}"
                                 class="nav-link {{ request()->is('*songs*') ? 'active' : '' }}">
                                 <i class="nav-icon fa fa-volume-up"></i>
                                 <p>
@@ -136,7 +136,7 @@
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright &copy; {{ date('Y') }} <a href="https://admksolutions.com/"
-                    target="-blank">Admksoluiton</a>.</strong>
+                    target="-blank">ADMKsolutions</a>.</strong>
             All rights reserved.
         </footer>
 

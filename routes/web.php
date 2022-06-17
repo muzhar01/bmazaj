@@ -19,7 +19,7 @@ use App\Http\Controllers\Admin\AudioController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.index');
 });
 
 Route::get('/admin',[AdminController::class,'index']);
