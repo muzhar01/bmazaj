@@ -81,7 +81,7 @@
             <a href="{{ url('admin/dashboard') }}" class="brand-link">
                 <img src="{{ asset('admin_assets/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Welcom Admin</span>
+                <span class="brand-text font-weight-light">Welcome Admin</span>
             </a>
 
             <!-- Sidebar -->
@@ -136,7 +136,7 @@
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright &copy; {{ date('Y') }} <a href="https://admksolutions.com/"
-                    target="-blank">Admksoluiton</a>.</strong>
+                    target="-blank">ADMKsolutions</a>.</strong>
             All rights reserved.
         </footer>
 
