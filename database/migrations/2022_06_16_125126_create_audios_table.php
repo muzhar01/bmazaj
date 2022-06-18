@@ -28,6 +28,7 @@ class CreateAudiosTable extends Migration
             $table->unsignedBigInteger('album_id')->nullable();
             $table->unsignedBigInteger('genre_id')->nullable();
             $table->unsignedBigInteger('artist_id')->nullable();
+            $table->integer('status');
             $table->timestamps();
             
         });

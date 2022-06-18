@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>bmazaj &#8211; Just another WordPress site</title>
+    <title>Bmazaj</title>
     <meta name='robots' content='max-image-preview:large' />
     <!-- Google Tag Manager for WordPress by gtm4wp.com -->
     <script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
