@@ -60,14 +60,6 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-4">
-                                        <label for="exampleInputEmail1">Link</label>
-                                        <input type="text" name="link" class="form-control"
-                                            placeholder="Link">
-                                        @if ($errors->has('link'))
-                                            <span class="error">{{ $errors->first('link') }}</span>
-                                        @endif
-                                    </div>
-                                    <div class="col-4">
                                         <label for="exampleInputEmail1">Audio</label>
                                         <input type="file" name="audio" class="form-control">
                                         @if ($errors->has('audio'))

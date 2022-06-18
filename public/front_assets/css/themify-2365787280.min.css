@@ -97,13 +97,13 @@ Author: Razia Freelancer (yt55035503@gmail.com)
 	width:960px !important;
 	margin:0 auto !important;
 }
-#tf-tile-24-2 {
+/* #tf-tile-24-2 {
 	width: 960px !important;
 	height: 480px !important;
-}
-#tf-tile-24-2 .tile-front {
+} */
+/* #tf-tile-24-2 .tile-front {
 	background-size:100% 100% !important;
-}
+} */
 .tf-tile .action-button {
 	width: 100% !important;
 	height: 100% !important;
@@ -142,10 +142,10 @@ Author: Razia Freelancer (yt55035503@gmail.com)
 	width: 320px !important;
 	height: 320px !important;
 }
-	#tf-tile-24-2 {
+	/* #tf-tile-24-2 {
 	height: 320px !important;
 }
-	
+	 */
 }
 @media screen and (max-width: 640px){
 	.themify_builder_content-17 .tb_l1x8311.module-image {
@@ -162,9 +162,9 @@ Author: Razia Freelancer (yt55035503@gmail.com)
 	width: 170px !important;
 	height: 170px !important;
 }
-	#tf-tile-24-2 {
+	/* #tf-tile-24-2 {
 	height: 170px !important;
-}
+} */
 	
 }
 /* START MOBILE MENU CSS */
