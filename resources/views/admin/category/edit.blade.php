@@ -53,7 +53,7 @@
                                      <div class="col-6">
                                         <label for="color">Back Color</label>
                                         <small>Choose the color of sliders back</small>
-                                        <input id="color" type="color" name="color" class="form-control" value="{{ $category->color ?? '' }}">
+                                        <input id="color" type="color" name="color" class="form-control" value="{{ $category->color ?? old('color') ?? '' }}" style="height:50px !important;">
                                         @if ($errors->has('color'))
                                             <span class="error">{{ $errors->first('color') }}</span>
                                         @endif

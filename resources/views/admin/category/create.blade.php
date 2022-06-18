@@ -32,7 +32,7 @@
                                     <div class="col-6">
                                         <label for="exampleInputEmail1">Name</label>
                                         <input type="text" name="name" class="form-control"
-                                            placeholder="Category Name">
+                                            placeholder="Category Name" value="{{ old('name') ?? '' }}">
                                         @if ($errors->has('name'))
                                             <span class="error">{{ $errors->first('name') }}</span>
                                         @endif
@@ -46,10 +46,10 @@
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-6">
+                                    <div class="col-4">
                                         <label for="color">Back Color</label>
                                         <small>Choose the color of sliders back</small>
-                                        <input id="color" type="color" name="color" class="form-control">
+                                        <input id="color" type="color" name="color" class="form-control" value="{{ old('color') ?? '' }}" style="height:50px !important;">
                                         @if ($errors->has('color'))
                                             <span class="error">{{ $errors->first('color') }}</span>
                                         @endif
@@ -58,7 +58,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <label for="exampleInputEmail1">Description</label>
-                                        <textarea name="description" class="form-control"></textarea>
+                                        <textarea name="description" class="form-control">{{ old('description') ?? '' }}</textarea>
                                         @if ($errors->has('description'))
                                             <span class="error">{{ $errors->first('description') }}</span>
                                         @endif
