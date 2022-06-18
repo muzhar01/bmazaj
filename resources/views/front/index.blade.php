@@ -25,7 +25,7 @@
                                     <div class="tile-flip-box-wrap">
                                         <div class="tile-flip-box">
                                             <style>
-                                                #tf-tile-24-0 .tile-front {
+                                                #tf-tile-24-{{ $i }} .tile-front {
                                                     background-image: url("{{ asset('/storage/media/category/'.$list->image) }}");
                                                 }
 
