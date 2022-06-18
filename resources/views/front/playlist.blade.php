@@ -33,7 +33,7 @@
     #simp .simp-controls .simp-time,#simp .simp-controls .simp-others{margin-left:10px;}
     #simp .simp-controls .simp-volume{max-width:110px;}
     #simp .simp-controls .simp-volume .simp-mute{margin-right:5px;}
-    #simp .simp-controls .simp-others .simp-active{background:#242f3d;}
+    #simp .simp-controls .simp-others .simp-active{background:#242f3d;border: 1px ridge #ffffff8c;}
     #simp .simp-controls .simp-others .simp-shide button{font-size:100%;padding:0;width:24px;height:14px;display:block;}
     #simp .simp-controls input[type=range]{-webkit-appearance:none;background:transparent;height:19px;margin:0;width:100%;display:block;position:relative;z-index:2;}
     #simp .simp-controls input[type=range]::-webkit-slider-runnable-track{background:rgba(183,197,205,.66);height:5px;border-radius:2.5px;transition:box-shadow .3s ease;position:relative;}
