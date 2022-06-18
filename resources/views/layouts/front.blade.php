@@ -863,11 +863,11 @@
                                     data-lazy="1">
                                     <div class="image-wrap tf_rel tf_mw"> <img decoding="async"
                                             data-tf-not-load="1" importance="high"
-                                            src="https://mtn.bmazaj.com/wp-content/uploads/2022/06/LOGO-TRANSPARANT-0100000-1024x562-150x82.png"
+                                            src="/front_assets/logo/logo.png"
                                             width="150" height="82" class="wp-post-image wp-image-238"
                                             title="Bmazaj"
                                             alt="Bmazaj"
-                                            srcset="https://mtn.bmazaj.com/wp-content/uploads/2022/06/LOGO-TRANSPARANT-0100000-1024x562-150x82.png 150w, https://mtn.bmazaj.com/wp-content/uploads/2022/06/LOGO-TRANSPARANT-0100000-300x165.png 300w, https://mtn.bmazaj.com/wp-content/uploads/2022/06/LOGO-TRANSPARANT-0100000-1024x562.png 1024w, https://mtn.bmazaj.com/wp-content/uploads/2022/06/LOGO-TRANSPARANT-0100000-768x421.png 768w, https://mtn.bmazaj.com/wp-content/uploads/2022/06/LOGO-TRANSPARANT-0100000-1536x843.png 1536w, https://mtn.bmazaj.com/wp-content/uploads/2022/06/LOGO-TRANSPARANT-0100000-2048x1124.png 2048w"
+                                            srcset="/front_assets/logo/logo.png 2048w"
                                             sizes="(max-width: 150px) 100vw, 150px" /> </div>
                                     <!-- /image-wrap -->
                                 </div>
