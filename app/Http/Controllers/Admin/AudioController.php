@@ -26,7 +26,6 @@ class AudioController extends Controller
             'title' => 'required|unique:audios',
             'category_id' => 'required',
             'thumbnail' => 'required|image|mimes:jpeg,png,jpg',
-            'link' => 'required',
             'audio' =>'nullable|file|mimes:audio/mpeg,mpga,mp3,wav,aac',
             'description'=>'required'
         ]);
@@ -40,7 +39,6 @@ class AudioController extends Controller
             $image->storeAs('/public/media/audio',$image_name);
             $model->thumbnail=$image_name;
         }
-        $model->link=$request->input('link');
         
         if($request->hasFile('audio')){
             $file = $request->file('audio');
@@ -71,7 +69,6 @@ class AudioController extends Controller
             'title' => 'required',
             'category_id' => 'required',
             'thumbnail' => 'image|mimes:jpeg,png,jpg',
-            'link' => 'required',
             'description'=>'required'
         ]);
         $model->title=$request->input('title');
@@ -83,7 +80,6 @@ class AudioController extends Controller
             $image->storeAs('/public/media/audio',$image_name);
             $model->thumbnail=$image_name;
         }
-        $model->link=$request->input('link');
         $model->description=$request->input('description');
         $model->status='1';
         if($model->save()){
