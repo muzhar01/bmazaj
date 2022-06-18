@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AdminDashboard;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\AudioController;
 
+use App\Models\Admin\Category;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,7 +20,8 @@ use App\Http\Controllers\Admin\AudioController;
 */
 
 Route::get('/', function () {
-    return view('front.index');
+    $result['category']=Category::where('status','1')->get();
+    return view('front.index',$result);
 });
 
 Route::get('/admin',[AdminController::class,'index']);

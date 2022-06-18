@@ -58,9 +58,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                  @php
+                                  $i=0;
+                                @endphp
                                     @foreach ($category as $list)
                                     @php
-                                      $i=1;
+                                      $i++;
                                     @endphp
                                       <tr>
                                         <td>{{ $i }}</td>
@@ -103,9 +106,6 @@
                                           </div>
                                         </td>
                                       </tr>
-                                      @php
-                                      $i++;
-                                    @endphp
                                     @endforeach
                                 </tbody>
                             </table>
