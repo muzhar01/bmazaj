@@ -19,9 +19,11 @@
                                 @endphp
                                 @foreach ($category as $list)
                                 <div id="tf-tile-24-{{ $i }}"
-                                    class="tf-tile size-square-large flip-horizontal has-flip tile-type-front-button"
+                                    class="tf-tile size-square-large has-flip tile-type-front-button"
                                     data-auto-flip="3" data-in-effect="flip-horizontal"
-                                    data-out-effect="">
+                                    data-out-effect=""
+                                    onclick="javascript:window.location.href = '{{ route('playlist', $list->id) }}';"
+                                    >
                                     <div class="tile-flip-box-wrap">
                                         <div class="tile-flip-box">
                                             <style>
@@ -128,5 +130,33 @@
     <!-- /row_inner -->
 </div>
 <!-- /module_row -->
+
+
+<script>
+function changeAffect(){
+var affects = ['flip-horizontal',
+'flip-vertical',
+'fadeIn',
+'fadeInRight',
+'fadeInDown',];
+
+var el = document.querySelectorAll('.tf-tile.size-square-large');
+
+    for(i of el){
+        rand = affects[(Math.random() * affects.length) | 0];
+        i.classList.add(rand);
+        i.setAttribute('data-in-effect', rand);
+        i.setAttribute('data-auto-flip', 3 + ((Math.random() * affects.length)%2)) ?? 2;
+        console.log("affect :::", rand);
+
+    }
+}
+changeAffect();
+
+setInterval(()=>{
+    changeAffect();
+}, 10000);
+
+</script>
 
 @endsection
