@@ -24,7 +24,7 @@ class FrontController extends Controller
      */
     public function playlist($id)
     {
-        $result['audio']=Audio::where('id',$id)->get();
+        $result['audio']=Audio::where('category_id',$id)->get();
         return view('front.playlist',$result);
     }
 

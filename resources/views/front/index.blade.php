@@ -18,7 +18,6 @@
                                     $i=0;
                                 @endphp
                                 @foreach ($category as $list)
-                                <a href="{{ url('playlist/'.$list->id) }}">
                                 <div id="tf-tile-24-{{ $i }}"
                                     class="tf-tile size-square-large flip-horizontal has-flip tile-type-front-button"
                                     data-auto-flip="3" data-in-effect="flip-horizontal"
@@ -35,7 +34,7 @@
                                             </style>
                                             <div
                                                 class="tile-front tile-type-button ui default">
-                                                <div class="tile-inner"><a href=""></a> </div>
+                                                <div class="tile-inner"> </div>
                                                 <!-- .tile-inner -->
                                             </div>
                                             <!-- .tile-front -->
@@ -49,9 +48,11 @@
                                                 class="tile-back tile-type-text ui yellow">
                                                 <div class="tile-inner">
                                                     <div class="tile-content">
+                                                        <a href="{{ url('playlist/'.$list->id) }}">
                                                         <h6 style="text-align: center;">
                                                             <strong>{{ $list->name }}</strong>
                                                         </h6>
+                                                        </a>
                                                     </div>
                                                     <!-- .tile-content -->
                                                 </div>
@@ -100,7 +101,6 @@
                                     </div>
 
                                 </div><!-- .tf-tile -->
-                            </a>
                                     @php
                                         $i++;
                                     @endphp
