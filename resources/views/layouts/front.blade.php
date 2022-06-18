@@ -220,10 +220,10 @@
         </style>
     </noscript>
     <link rel="prefetch"
-        href="front_assets/js/themify.script.min.js" as="script"
+        href="/front_assets/js/themify.script.min.js" as="script"
         importance="low" />
     <link rel="preload"
-        href="front_assets/js/themify.builder.script.min.js"
+        href="/front_assets/js/themify.builder.script.min.js"
         as="script" importance="low" />
     <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2" as="font"
         type="font/woff2" crossorigin importance="high" />
@@ -242,10 +242,10 @@
         href="https://fonts.gstatic.com/s/robotoslab/v23/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rj.woff2" as="font"
         type="font/woff2" crossorigin importance="high" />
     <link rel="preload" importance="high"
-        href="front_assets/css/themify-2365787280.min.css"
+        href="/front_assets/css/themify-2365787280.min.css"
         as="style">
     <link importance="high" id="themify_concate-css" rel="stylesheet"
-        href="front_assets/css/themify-2365787280.min.css">
+        href="/front_assets/css/themify-2365787280.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
     <link rel="alternate" type="application/rss+xml" title="bmazaj &raquo; Feed" href="https://mtn.bmazaj.com/feed/" />
@@ -500,7 +500,7 @@
         }
 
     </style>
-    <script src='front_assets/js/jquery.min.js' id='jquery-core-js'></script>
+    <script src='/front_assets/js/jquery.min.js' id='jquery-core-js'></script>
     <link rel="https://api.w.org/" href="https://mtn.bmazaj.com/wp-json/" />
     <link rel="alternate" type="application/json" href="https://mtn.bmazaj.com/wp-json/wp/v2/pages/17" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mtn.bmazaj.com/xmlrpc.php?rsd" />
@@ -951,13 +951,13 @@ var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/t
     <!--/noindex-->
     <!--googleon:all-->
     <script nomodule defer
-        src="front_assets/js/fallback.min.js">
+        src="/front_assets/js/fallback.min.js">
     </script>
     <link rel="preload" href="https://mtn.bmazaj.com/wp-content/plugins/themify-tiles/assets/style.css?ver=6.0"
         as="style" />
     <link rel='stylesheet' id='themify-tiles-css'
         href='https://mtn.bmazaj.com/wp-content/plugins/themify-tiles/assets/style.css?ver=6.0' media='all' />
-    <script defer="defer" src='front_assets/js/main.min.js'
+    <script defer="defer" src='/front_assets/js/main.min.js'
         id='themify-main-script-js'></script>
      {{-- <script
         src='https://mtn.bmazaj.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-contact-form-7-tracker.js?ver=1.15.2'
@@ -987,7 +987,7 @@ var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/t
         };
 
     </script>
-    <script defer="defer" src='front_assets/js/script.js'
+    <script defer="defer" src='/front_assets/js/script.js'
         id='themify-tiles-js'></script>
     <svg id="tf_svg" style="display:none">
         <defs>

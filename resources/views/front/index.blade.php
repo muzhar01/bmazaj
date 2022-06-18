@@ -22,7 +22,12 @@
                                     class="tf-tile size-square-large has-flip tile-type-front-button"
                                     data-auto-flip="3" data-in-effect="flip-horizontal"
                                     data-out-effect=""
-                                    onclick="javascript:window.location.href = '{{ route('playlist', $list->id) }}';"
+                                    @if($list->audios()->count() > 0)
+                                        onclick="javascript:window.location.href = '{{ route('playlist', $list->id) }}';"
+                                    @else
+                                        onclick="javascript:alert('No audio files in this category yet !');"
+                                    @endif
+
                                     >
                                     <div class="tile-flip-box-wrap">
                                         <div class="tile-flip-box">
@@ -47,12 +52,12 @@
 
                                             </style>
                                             <div
-                                                class="tile-back tile-type-text ui yellow">
+                                                class="tile-back tile-type-text ui {{ $list->color ?? 'yellow' }}">
                                                 <div class="tile-inner">
                                                     <div class="tile-content">
                                                         <a href="{{ url('playlist/'.$list->id) }}">
                                                         <h6 style="text-align: center;">
-                                                            <strong>{{ $list->name }}</strong>
+                                                            <strong>{{ $list->description }}</strong>
                                                         </h6>
                                                         </a>
                                                     </div>
@@ -80,9 +85,9 @@
                                                 "scrollwheel_map_front": "enable",
                                                 "draggable_map_front": "enable",
                                                 "action_param_front": "|",
-                                                "background_image_front": "https:\/\/mtn.bmazaj.com\/wp-content\/uploads\/2022\/06\/habooba.png",
+                                                "background_image_front": "{{ asset('/storage/media/category/'. $list->image) }}",
                                                 "type_back": "text",
-                                                "color_back": "yellow",
+                                                "color_back": "{{ $list->color ?? 'yellow' }}",
                                                 "text_back": " <
                                                     h6 style = \
                                                     "text-align: center;\"><strong>\u062d\u0628\u0648\u0628\u0629 \u0643\u0644\u0627\u0645\u0647\u0627 \u0634\u0646\u0648\u061f \u0627\u0636\u063a\u0637 <u>\u0647\u0646\u0627<\/u> \u0644\u0644\u0627\u0634\u062a\u0631\u0627\u0643 \u0648\u0644\u0633\u0645\u0627\u0639 \u0627\u0644\u0633\u0645\u062d \u0645\u0646 \u062d\u0643\u0645 \u0648\u0623\u0642\u0648\u0627\u0644 \u062d\u0628\u0648\u0628\u0629<\/strong><\/h6>",
