@@ -17,6 +17,7 @@ class CreateAudiosTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('thumbnail')->nullable();
+            $table->string('audio');
             $table->text('description')->nullable();
             $table->string('link');
             $table->integer('views')->default(0);
