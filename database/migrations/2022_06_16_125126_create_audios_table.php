@@ -19,7 +19,6 @@ class CreateAudiosTable extends Migration
             $table->string('thumbnail')->nullable();
             $table->string('audio');
             $table->text('description')->nullable();
-            $table->string('link');
             $table->integer('views')->default(0);
             $table->dateTimeTz('release_date')->nullable();
             $table->unsignedBigInteger('label_id')->nullable();
