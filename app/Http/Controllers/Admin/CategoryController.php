@@ -29,6 +29,7 @@ class CategoryController extends Controller
         ]);
         $model=new Category();
         $model->name=$request->input('name');
+        $model->color = $request->input('color');
         if($request->hasFile('image')){
             $image=$request->file('image');
             $ext=$image->extension();
@@ -88,6 +89,7 @@ class CategoryController extends Controller
             'description'=>'required'
         ]);
         $model->name=$request->input('name');
+        $model->color = $request->input('color');
         if($request->hasFile('image')){
             $image=$request->file('image');
             $ext=$image->extension();

@@ -953,10 +953,10 @@ var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/t
     <script nomodule defer
         src="/front_assets/js/fallback.min.js">
     </script>
-    <link rel="preload" href="https://mtn.bmazaj.com/wp-content/plugins/themify-tiles/assets/style.css?ver=6.0"
+    <link rel="preload" href="/front_assets/css/style.css"
         as="style" />
     <link rel='stylesheet' id='themify-tiles-css'
-        href='https://mtn.bmazaj.com/wp-content/plugins/themify-tiles/assets/style.css?ver=6.0' media='all' />
+        href='/front_assets/css/style.css' media='all' />
     <script defer="defer" src='/front_assets/js/main.min.js'
         id='themify-main-script-js'></script>
      {{-- <script

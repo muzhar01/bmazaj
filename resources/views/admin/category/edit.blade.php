@@ -28,7 +28,7 @@
                                 <h3 class="card-title">Edit Category</h3>
                             </div>
                             <div class="card-body">
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-6">
                                       <input type="hidden" name="id" value="{{ $category->id }}">
                                         <label for="exampleInputEmail1">Name</label>
@@ -48,6 +48,19 @@
                                         <img src="{{ asset('/storage/media/category/'. $category->image) }}" width="100px" height="100px" alt="">
                                         @endif
                                     </div>
+                                </div>
+                                <div class="row mb-3">
+                                     <div class="col-6">
+                                        <label for="color">Back Color</label>
+                                        <small>Choose the color of sliders back</small>
+                                        <input id="color" type="color" name="color" class="form-control" value="{{ $category->color ?? '' }}">
+                                        @if ($errors->has('color'))
+                                            <span class="error">{{ $errors->first('color') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
                                     <div class="col-12">
                                         <label for="exampleInputEmail1">Description</label>
                                         <textarea name="description" class="form-control">{{ $category->description }}</textarea>

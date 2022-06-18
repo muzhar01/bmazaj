@@ -52,7 +52,7 @@
 
                                             </style>
                                             <div
-                                                class="tile-back tile-type-text ui {{ $list->color ?? 'yellow' }}">
+                                                class="tile-back tile-type-text ui" style="background-color: {{ $list->color ?? 'yellow' }};">
                                                 <div class="tile-inner">
                                                     <div class="tile-content">
                                                         <a href="{{ url('playlist/'.$list->id) }}">
