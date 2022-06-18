@@ -83,7 +83,7 @@ class CategoryController extends Controller
     {
         $model=Category::find($request->post('id'));
         $request->validate([
-            'name' => 'required|unique:categories',
+            'name' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg',
             'description'=>'required'
         ]);
