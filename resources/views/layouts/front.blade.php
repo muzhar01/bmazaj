@@ -861,6 +861,7 @@
                                 <!-- module image -->
                                 <div class="module module-image tb_h6yj95   image-left tf_mw"
                                     data-lazy="1">
+                                    <a href="{{ url('/') }}">
                                     <div class="image-wrap tf_rel tf_mw"> <img decoding="async"
                                             data-tf-not-load="1" importance="high"
                                             src="/front_assets/logo/logo.png"
@@ -868,7 +869,7 @@
                                             title="Bmazaj"
                                             alt="Bmazaj"
                                             srcset="/front_assets/logo/logo.png 2048w"
-                                            sizes="(max-width: 150px) 100vw, 150px" /> </div>
+                                            sizes="(max-width: 150px) 100vw, 150px" /> </div></a>
                                     <!-- /image-wrap -->
                                 </div>
                                 <!-- /module image -->
