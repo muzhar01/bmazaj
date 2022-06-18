@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Admin\Audio;
 
 class FrontController extends Controller
 {
@@ -23,7 +24,8 @@ class FrontController extends Controller
      */
     public function playlist($id)
     {
-        return view('front.playlist');
+        $result['audio']=Audio::where('id',$id)->get();
+        return view('front.playlist',$result);
     }
 
 }

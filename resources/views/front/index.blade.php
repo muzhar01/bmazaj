@@ -18,6 +18,7 @@
                                     $i=0;
                                 @endphp
                                 @foreach ($category as $list)
+                                <a href="{{ url('playlist/'.$list->id) }}">
                                 <div id="tf-tile-24-{{ $i }}"
                                     class="tf-tile size-square-large flip-horizontal has-flip tile-type-front-button"
                                     data-auto-flip="3" data-in-effect="flip-horizontal"
@@ -26,22 +27,22 @@
                                         <div class="tile-flip-box">
                                             <style>
                                                 #tf-tile-24-{{ $i }} .tile-front {
-                                                    background-image: url("{{ asset('/storage/media/category/'.$list->image) }}");
+                                                    background-image: url("{{ asset('/storage/media/category/'. $list->image) }}");
                                                 }
 
-                                                #tf-tile-24-0 .tile-front a {}
+                                                #tf-tile-24-{{ $i }} .tile-front a {}
 
                                             </style>
                                             <div
                                                 class="tile-front tile-type-button ui default">
-                                                <div class="tile-inner"> </div>
+                                                <div class="tile-inner"><a href=""></a> </div>
                                                 <!-- .tile-inner -->
                                             </div>
                                             <!-- .tile-front -->
                                             <style>
-                                                #tf-tile-24-0 .tile-back {}
+                                                #tf-tile-24-{{ $i }} .tile-back {}
 
-                                                #tf-tile-24-0 .tile-back a {}
+                                                #tf-tile-24-{{ $i }} .tile-back a {}
 
                                             </style>
                                             <div
@@ -49,7 +50,7 @@
                                                 <div class="tile-inner">
                                                     <div class="tile-content">
                                                         <h6 style="text-align: center;">
-                                                            <strong>{{ Str::ucfirst($list->name) }}</strong>
+                                                            <strong>{{ $list->name }}</strong>
                                                         </h6>
                                                     </div>
                                                     <!-- .tile-content -->
@@ -99,9 +100,10 @@
                                     </div>
 
                                 </div><!-- .tf-tile -->
-                                @php
-                                $i++;
-                                @endphp
+                            </a>
+                                    @php
+                                        $i++;
+                                    @endphp
                                 @endforeach
 
                             </div>

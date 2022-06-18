@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminDashboard;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\AudioController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FrontController;
 
 use App\Models\Admin\Category;
 /*
@@ -52,6 +54,6 @@ Route::group(['middleware'=>'admin_auth'],function(){
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/playlist/{id}', [App\Http\Controllers\FrontController::class, 'playlist'])->name('playlist');
+Route::get('/playlist/{id}', [FrontController::class, 'playlist'])->name('playlist');
