@@ -50,6 +50,7 @@
                                 <thead>
                                     <tr>
                                         <th>Sr No.</th>
+                                        <th>Title</th>
                                         <th>Thumbnail</th>
                                         <th>Description</th>
                                         <th>Audio</th>

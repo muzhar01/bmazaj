@@ -31,6 +31,7 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <label for="exampleInputEmail1">Title</label>
+                                        <input type="hidden" name="id" value="{{ $audio->id }}">
                                         <input type="text" name="title" class="form-control"
                                             placeholder="Category Name" value="{{ $audio->title }}">
                                         @if ($errors->has('title'))

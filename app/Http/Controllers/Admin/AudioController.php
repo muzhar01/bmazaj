@@ -109,8 +109,8 @@ class AudioController extends Controller
     public function destroy(Audio $audio,$id)
     {
         $model=Audio::find($id);
-        $filePathName =public_path().'/storage/media/audio/'.$model->image;
-        if ($filePathName) {
+        $filePathName =public_path().'/storage/media/audio/'.$model->thumbnail;
+        if(file_exists($filePathName)) {
             unlink($filePathName);
         }
         if ($model->delete()) {
