@@ -72,7 +72,7 @@
                                         <td><img src="{{ asset('/storage/media/audio/'. $list->thumbnail) }}" height="100px" width="100px" alt=""></td>
                                         <td>{{ $list->description }}</td>
                                         <td>
-                                          <audio controls controlsList="nodownload">
+                                          <audio controls controlsList="nodownload" onplay="pauseOthers(this);">
                                             <source src="{{ asset('/storage/media/audio/file/'.$list->audio) }}">
                                           </audio>
                                         </td>
@@ -123,4 +123,11 @@
             </div>
         </div>
     </section>
+    <script>
+      function pauseOthers(ele) {
+                $("audio").not(ele).each(function (index, audio) {
+                    audio.pause();
+                });
+            }
+    </script>
 @endsection
