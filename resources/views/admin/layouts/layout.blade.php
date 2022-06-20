@@ -34,8 +34,6 @@
     <link rel="stylesheet" href="{{ asset('admin_assets/css/summernote-bs4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin_assets/css/dataTables.bootstrap4.min.css')}}">
     <link rel="stylesheet" href="{{ asset('admin_assets/css/custom.css')}}">
-    @livewireScripts
-    <script src="https://cdn.jsdelivr.net/gh/livewire/sortable@v0.x.x/dist/livewire-sortable.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -238,6 +236,9 @@
             });
         });
     </script>
+    
+    @livewireScripts
+    <script src="https://cdn.jsdelivr.net/gh/livewire/sortable@v0.x.x/dist/livewire-sortable.js"></script>
 </body>
 
 </html>
