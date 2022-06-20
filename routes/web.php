@@ -57,6 +57,7 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/category/edit/{id}',[CategoryController::class,'edit']);
     Route::get('admin/category/delete/{id}',[CategoryController::class,'destroy']);
     Route::post('admin/categoryupdate',[CategoryController::class,'update'])->name('admin-category-update');
+    Route::post('admin/categoryposiiton',[CategoryController::class,'updatePosition'])->name('update-category-orderPosition');
     // Audio Route //////
     Route::get('admin/audio',[AudioController::class,'index'])->name('admin-audio');
     Route::get('admin/add/audio',[AudioController::class,'create'])->name('admin-add-audio');
