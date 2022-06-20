@@ -109,11 +109,14 @@ class CategoryController extends Controller
             return redirect('admin/category');
         }
     }
-    public function updateCategoryOrder($items){
-        foreach($items as $item){
-            Category::find($item['value'])->update(['order_position'=>$item['order']]);
+    public function updatePosition(Request $request){
+        $allData=$request()->post('allData');
+        $i=1;
+        foreach($allData as $key=>$val ){
+            Category::find($val)->update(['order_position'=>$i]);
+            $i++;
         }
-        session()->flash('success','Position sorted successfully');
-        return redirect('admin/category');
+       
+        return response()->json('Position Change Successfully');
     }
 }
