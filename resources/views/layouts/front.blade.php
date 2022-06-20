@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Bmazaj</title>
+    <title>A7lamood</title>
     <meta name='robots' content='max-image-preview:large' />
     <!-- Google Tag Manager for WordPress by gtm4wp.com -->
     <script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
         var gtm4wp_datalayer_name = "dataLayer";
         var dataLayer = dataLayer || [];
-
     </script>
     <!-- End Google Tag Manager for WordPress by gtm4wp.com -->
     <style id="tf_lazy_style">
@@ -38,7 +37,6 @@
         .module_subrow[data-lazy]>.subrow_inner {
             background-image: none !important
         }
-
     </style>
     <noscript>
         <style>
@@ -50,7 +48,6 @@
                 filter: none !important;
                 opacity: 1 !important
             }
-
         </style>
     </noscript>
     <style id="tf_lazy_common">
@@ -209,22 +206,16 @@
             position: static;
             object-fit: cover
         }
-
     </style>
     <noscript>
         <style>
             body:not(.page-loaded) #main-nav li .sub-menu {
                 display: block
             }
-
         </style>
     </noscript>
-    <link rel="prefetch"
-        href="/front_assets/js/themify.script.min.js" as="script"
-        importance="low" />
-    <link rel="preload"
-        href="/front_assets/js/themify.builder.script.min.js"
-        as="script" importance="low" />
+    <link rel="prefetch" href="/front_assets/js/themify.script.min.js" as="script" importance="low" />
+    <link rel="preload" href="/front_assets/js/themify.builder.script.min.js" as="script" importance="low" />
     <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2" as="font"
         type="font/woff2" crossorigin importance="high" />
     <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font"
@@ -236,14 +227,12 @@
     <link rel="preload" href="https://fonts.gstatic.com/s/robotocondensed/v25/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2"
         as="font" type="font/woff2" crossorigin importance="high" />
     <link rel="preload"
-        href="https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYbw.woff2" as="font"
-        type="font/woff2" crossorigin importance="high" />
+        href="https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCQYbw.woff2"
+        as="font" type="font/woff2" crossorigin importance="high" />
     <link rel="preload"
-        href="https://fonts.gstatic.com/s/robotoslab/v23/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rj.woff2" as="font"
-        type="font/woff2" crossorigin importance="high" />
-    <link rel="preload" importance="high"
-        href="/front_assets/css/themify-2365787280.min.css"
-        as="style">
+        href="https://fonts.gstatic.com/s/robotoslab/v23/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rj.woff2"
+        as="font" type="font/woff2" crossorigin importance="high" />
+    <link rel="preload" importance="high" href="/front_assets/css/themify-2365787280.min.css" as="style">
     <link importance="high" id="themify_concate-css" rel="stylesheet"
         href="/front_assets/css/themify-2365787280.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -498,7 +487,6 @@
         .has-x-large-font-size {
             font-size: var(--wp--preset--font-size--x-large) !important;
         }
-
     </style>
     <script src='/front_assets/js/jquery.min.js' id='jquery-core-js'></script>
     <link rel="https://api.w.org/" href="https://mtn.bmazaj.com/wp-json/" />
@@ -521,10 +509,9 @@
             "pagePostType2": "single-page",
         };
         dataLayer.push(dataLayer_content);
-
     </script>
     <script data-cfasync="false">
-        (function (w, d, s, l, i) {
+        (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -537,7 +524,6 @@
             j.src = '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', '0');
-
     </script>
     <!-- End Google Tag Manager -->
     <!-- End Google Tag Manager for WordPress by gtm4wp.com -->
@@ -569,13 +555,11 @@
             height: 480px;
             max-width: 100%;
         }
-
     </style>
     <style>
         :root {
             --builder-tiles-gutter: 0px
         }
-
     </style>
     <style id="tb_inline_styles">
         .tb_animation_on {
@@ -647,7 +631,6 @@
                 background: none !important
             }
         }
-
     </style>
     <noscript>
         <style>
@@ -655,14 +638,13 @@
             .wow .tf_lazy {
                 visibility: visible !important
             }
-
         </style>
     </noscript>
 </head>
 
 <body class="home page-template-default page page-id-17 skin-white sidebar-none default_width tb_animation_on">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-dark-grayscale">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -677,8 +659,8 @@
             </filter>
         </defs>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-grayscale">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -693,8 +675,8 @@
             </filter>
         </defs>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-purple-yellow">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -709,8 +691,8 @@
             </filter>
         </defs>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-blue-red">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -725,8 +707,8 @@
             </filter>
         </defs>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-midnight">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -741,8 +723,8 @@
             </filter>
         </defs>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-magenta-yellow">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -757,8 +739,8 @@
             </filter>
         </defs>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-purple-green">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -773,8 +755,8 @@
             </filter>
         </defs>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-blue-orange">
                 <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
@@ -792,8 +774,8 @@
     <!-- GTM Container placement set to automatic -->
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe data-tf-not-load="1" src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0"
-            style="display:none;visibility:hidden" aria-hidden="true"></iframe>
+        <iframe data-tf-not-load="1" src="https://www.googletagmanager.com/ns.html?id=" height="0"
+            width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="pagewrap" class="hfeed site">
@@ -803,9 +785,10 @@
                 <header id="header" class="pagewidth tf_clearfix" itemscope="itemscope"
                     itemtype="https://schema.org/WPHeader">
                     <div class="header-padding">
-                        <div id="site-logo"><a href="https://mtn.bmazaj.com" title="bmazaj"><span>bmazaj</span></a>
+                        <div id="site-logo"><a href="https://mtn.bmazaj.com"
+                                title="bmazaj"><span>Ivorycell</span></a>
                         </div>
-                        <div id="site-description" class="site-description"><span>Just another WordPress site</span>
+                        <div id="site-description" class="site-description"><span>Ivorycell</span>
                         </div>
                         <div class="social-widget">
                             <div class="rss">
@@ -819,12 +802,15 @@
                         <div id="searchform-wrap">
                             <form method="get" id="searchform" action="https://mtn.bmazaj.com/"> <i
                                     class="icon-search"></i>
-                                <input type="text" name="s" id="s" title="Search" value="" /> </form>
+                                <input type="text" name="s" id="s" title="Search"
+                                    value="" />
+                            </form>
                         </div>
                         <!-- /searchform-wrap -->
                     </div>
                     <!-- /header-padding -->
-                    <nav id="main-nav-wrap" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+                    <nav id="main-nav-wrap" itemscope="itemscope"
+                        itemtype="https://schema.org/SiteNavigationElement">
                         <ul id="main-nav" class="main-nav tf_clearfix tf_box">
                             <li class="page_item page-item-17 current_page_item"><a href="/"
                                     aria-current="page">Home</a></li>
@@ -843,59 +829,65 @@
                 <!-- content -->
                 <main id="content" class="tf_clearfix">
                     <div id="page-17" class="type-page">
-        <!-- page-title -->
-        <time datetime="2022-05-28"></time>
-        <h1 itemprop="name" class="page-title">Home </h1>
-        <div class="page-content entry-content">
-            <!--themify_builder_content-->
-            <div id="themify_builder_content-17" data-postid="17"
-                class="themify_builder_content themify_builder_content-17 themify_builder tf_clear">
-                <!-- module_row -->
-                <div id="ffsasds" data-lazy="1"
-                    class="module_row themify_builder_row tb_ql4j664 tb_first tf_clearfix">
-                    <div class="row_inner col_align_top col-count-2 tf_box tf_w tf_rel" data-basecol="2"
-                        data-col_tablet="column4-2" data-col_mobile="column4-2">
-                        <div data-lazy="1"
-                            class="module_column tb-column col2-1 first tb_hx00665 tf_box">
-                            <div class="tb-column-inner tf_box tf_w">
-                                <!-- module image -->
-                                <div class="module module-image tb_h6yj95   image-left tf_mw"
-                                    data-lazy="1">
-                                    <a href="{{ url('/') }}">
-                                    <div class="image-wrap tf_rel tf_mw"> <img decoding="async"
-                                            data-tf-not-load="1" importance="high"
-                                            src="/front_assets/logo/logo.png"
-                                            width="150" height="82" class="wp-post-image wp-image-238"
-                                            title="Bmazaj"
-                                            alt="Bmazaj"
-                                            srcset="/front_assets/logo/logo.png 2048w"
-                                            sizes="(max-width: 150px) 100vw, 150px" /> </div></a>
-                                    <!-- /image-wrap -->
+                        <!-- page-title -->
+                        <time datetime="2022-05-28"></time>
+                        <h1 itemprop="name" class="page-title">Home </h1>
+                        <div class="page-content entry-content">
+                            <!--themify_builder_content-->
+                            <div id="themify_builder_content-17" data-postid="17"
+                                class="themify_builder_content themify_builder_content-17 themify_builder tf_clear">
+                                <!-- module_row -->
+                                <div id="ffsasds" data-lazy="1"
+                                    class="module_row themify_builder_row tb_ql4j664 tb_first tf_clearfix">
+                                    <div class="row_inner col_align_top col-count-2 tf_box tf_w tf_rel"
+                                        data-basecol="2" data-col_tablet="column4-2" data-col_mobile="column4-2">
+                                        <div data-lazy="1"
+                                            class="module_column tb-column col2-1 first tb_hx00665 tf_box">
+                                            <div class="tb-column-inner tf_box tf_w">
+                                                <!-- module image -->
+                                                <div class="module module-image tb_h6yj95   image-left tf_mw"
+                                                    data-lazy="1">
+                                                    <a href="{{ url('/') }}">
+                                                        @if ($logo)
+                                                            <div class="image-wrap tf_rel tf_mw"> 
+                                                                <img
+                                                                    decoding="async" data-tf-not-load="1"
+                                                                    importance="high"
+                                                                    src="{{ asset('/storage/media/logo/' . $logo->image) }}"
+                                                                    width="150" height="82"
+                                                                    class="wp-post-image wp-image-238" title="Bmazaj"
+                                                                    alt="Bmazaj"
+                                                                    srcset="{{ asset('/storage/media/logo/' . $logo->image) }} 2048w"
+                                                                    sizes="(max-width: 150px) 100vw, 150px" /> 
+                                                            </div>
+                                                        @endif
+                                                    </a>
+                                                    <!-- /image-wrap -->
+                                                </div>
+                                                <!-- /module image -->
+                                            </div>
+                                        </div>
+                                        <div data-lazy="1"
+                                            class="module_column tb-column col2-1 last tb_l56q666 tf_box">
+                                            <div class="tb-column-inner tf_box tf_w">
+                                                <!-- module image -->
+                                                <div class="module module-image tb_l1x8311   image-right tf_mw"
+                                                    data-lazy="1">
+                                                    <div class="image-wrap tf_rel tf_mw"> </div>
+                                                    <!-- /image-wrap -->
+                                                </div>
+                                                <!-- /module image -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /row_inner -->
                                 </div>
-                                <!-- /module image -->
-                            </div>
-                        </div>
-                        <div data-lazy="1"
-                            class="module_column tb-column col2-1 last tb_l56q666 tf_box">
-                            <div class="tb-column-inner tf_box tf_w">
-                                <!-- module image -->
-                                <div class="module module-image tb_l1x8311   image-right tf_mw"
-                                    data-lazy="1">
-                                    <div class="image-wrap tf_rel tf_mw"> </div>
-                                    <!-- /image-wrap -->
-                                </div>
-                                <!-- /module image -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /row_inner -->
-                </div>
-                <!-- /module_row -->
+                                <!-- /module_row -->
 
-                    <!-- Content from yield ========================================================================================================== -->
-                    @yield('content')
-                    <!-- // Content from yield ======================================================================================================= -->
-                
+                                <!-- Content from yield ========================================================================================================== -->
+                                @yield('content')
+                                <!-- // Content from yield ======================================================================================================= -->
+
                             </div>
                             <!--/themify_builder_content-->
                             <!-- /comments -->
@@ -929,7 +921,7 @@
 
                 <div class="footer-text tf_clearfix">
                     <div class="one">&copy; <a href="https://mtn.bmazaj.com">bmazaj</a> 2022</div>
-                    <div class="two">Powered by <a href="https://admksolutions.com" target="_blank">ADMKsol</a></div>
+                    <div class="two">Powered by <a href="javascript:;" target="_blank">Ivorycell</a></div>
                 </div>
                 <!-- /footer-text -->
 
@@ -946,21 +938,16 @@
     <!--noindex-->
     <script type="text/template" id="tf_vars">
         var tbLocalScript = {"builder_url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder","js_modules":{"b":{"u":"/js/themify.builder.script.min.js","v":"5.6.2"},"sh":{"u":"/js/themify.scroll-highlight.min.js","v":"5.6.2"},"sty":{"u":"sticky.min.js","v":"5.6.2"}},"breakpoints":{"tablet_landscape":[769,1024],"tablet":[481,768],"mobile":480},"fullwidth_support":"","scrollHighlight":{"speed":900.009999999999990905052982270717620849609375},"addons":{"bgzs":{"match":".builder-zoom-scrolling","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/bgzoom_scroll.js"},"bgzm":{"match":".builder-zooming","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/bgzoom.js"},"p":{"match":".builder-parallax-scrolling","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/parallax.js"},"fwv":{"match":"[data-tbfullwidthvideo]","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/fullwidthvideo.js"},"fwr":{"match":".fullwidth.module_row,.fullwidth_row_container.module_row","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/fullwidthRows.js"},"bgs":{"selector":":scope>.tb_slider","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/backgroundSlider.js"},"rd":{"selector":".module-text-more","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/readMore.js"},"cl":{"selector":"[data-tb_link]","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/clickableComponent.js"},"fr":{"match":".tb_row_frame_wrap","css":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/frames.css"},"bgz":{"match":".themify-bg-zoom","css":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/bg-zoom.css"},"cv":{"selector":".builder_row_cover","css":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/cover.css"}}};
-var themifyScript = {"expand":"<i class=\"ti-angle-down\" title=\"Expand\"><\/i>","collapse":"<i class=\"ti-close\" title=\"Collapse\"><\/i>","infiniteEnable":"0"};
-var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify","wp":"6.0","ajax_url":"https://mtn.bmazaj.com/wp-admin/admin-ajax.php","includesURL":"https://mtn.bmazaj.com/wp-includes/","emailSub":"Check this out!","nop":"Sorry, no posts found.","lightbox":{"contentImagesAreas":".type-gallery","i18n":{"tCounter":"%curr% of %total%"}},"s_v":"5.3.9","js_modules":{"fxh":{"u":"fixedheader.min.js","v":"5.6.2"},"lb":{"u":"lightbox.min.js","v":"5.6.2"},"gal":{"u":"themify.gallery.min.js","v":"5.6.2"},"sw":{"u":"swiper/swiper.min.js","v":"5.6.2"},"tc":{"u":"themify.carousel.min.js","v":"5.6.2"},"map":{"u":"map.min.js","v":"5.6.2"},"at":{"u":"autoTiles.min.js","v":"5.6.2"},"iso":{"u":"isotop.min.js","v":"5.6.2"},"is":{"u":"jquery.isotope.min.js","v":"5.6.2"},"inf":{"u":"infinite.min.js","v":"5.6.2"},"lax":{"u":"lax.min.js","v":"5.6.2"},"lx":{"u":"themify.lax.min.js","v":"5.6.2"},"video":{"u":"video-player.min.js","v":"5.6.2"},"audio":{"u":"audio-player.min.js","v":"5.6.2"},"side":{"u":"themify.sidemenu.min.js","v":"5.6.2"},"edge":{"u":"edge.Menu.min.js","v":"5.6.2"},"wow":{"u":"tf_wow.min.js","v":"5.6.2"},"sharer":{"u":"sharer.min.js","v":"5.6.2"},"mega":{"u":"megamenu.js","v":"5.6.2"},"drop":{"u":"themify.dropdown.min.js","v":"5.6.2"},"wc":{"u":"wc.min.js","v":"5.6.2"},"as":{"u":"ajax-search.min.js","v":"5.6.2"},"t":{"u":"tooltip.min.js","v":"5.6.2"}},"css_modules":{"sw":{"u":"swiper/swiper.min.css","v":"5.6.2"},"an":{"u":"animate.min.css","v":"5.6.2"},"video":{"u":"video.min.css","v":"5.6.2"},"audio":{"u":"audio.min.css","v":"5.6.2"},"drop":{"u":"dropdown.min.css","v":"5.6.2"},"lb":{"u":"lightbox.min.css","v":"5.6.2"},"t":{"u":"tooltip.min.css","v":"5.6.2"}},"menu_tooltips":[],"is_min":"1","wp_embed":"https://mtn.bmazaj.com/wp-includes/js/wp-embed.min.js","sw":{"site_url":"https://mtn.bmazaj.com","plugins_url":"plugins","sw_refresh":true},"theme_v":"5.6.0","theme_js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/js/themify.script.min.js","theme_url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack","menu_point":"1200","done":{"tb_parallax":true,"tf_search_form":true,"tb_image":true,"tb_image_left":true,"tb_image_right":true,"tb_style":true}};            
+    var themifyScript = {"expand":"<i class=\"ti-angle-down\" title=\"Expand\"><\/i>","collapse":"<i class=\"ti-close\" title=\"Collapse\"><\/i>","infiniteEnable":"0"};
+    var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify","wp":"6.0","ajax_url":"https://mtn.bmazaj.com/wp-admin/admin-ajax.php","includesURL":"https://mtn.bmazaj.com/wp-includes/","emailSub":"Check this out!","nop":"Sorry, no posts found.","lightbox":{"contentImagesAreas":".type-gallery","i18n":{"tCounter":"%curr% of %total%"}},"s_v":"5.3.9","js_modules":{"fxh":{"u":"fixedheader.min.js","v":"5.6.2"},"lb":{"u":"lightbox.min.js","v":"5.6.2"},"gal":{"u":"themify.gallery.min.js","v":"5.6.2"},"sw":{"u":"swiper/swiper.min.js","v":"5.6.2"},"tc":{"u":"themify.carousel.min.js","v":"5.6.2"},"map":{"u":"map.min.js","v":"5.6.2"},"at":{"u":"autoTiles.min.js","v":"5.6.2"},"iso":{"u":"isotop.min.js","v":"5.6.2"},"is":{"u":"jquery.isotope.min.js","v":"5.6.2"},"inf":{"u":"infinite.min.js","v":"5.6.2"},"lax":{"u":"lax.min.js","v":"5.6.2"},"lx":{"u":"themify.lax.min.js","v":"5.6.2"},"video":{"u":"video-player.min.js","v":"5.6.2"},"audio":{"u":"audio-player.min.js","v":"5.6.2"},"side":{"u":"themify.sidemenu.min.js","v":"5.6.2"},"edge":{"u":"edge.Menu.min.js","v":"5.6.2"},"wow":{"u":"tf_wow.min.js","v":"5.6.2"},"sharer":{"u":"sharer.min.js","v":"5.6.2"},"mega":{"u":"megamenu.js","v":"5.6.2"},"drop":{"u":"themify.dropdown.min.js","v":"5.6.2"},"wc":{"u":"wc.min.js","v":"5.6.2"},"as":{"u":"ajax-search.min.js","v":"5.6.2"},"t":{"u":"tooltip.min.js","v":"5.6.2"}},"css_modules":{"sw":{"u":"swiper/swiper.min.css","v":"5.6.2"},"an":{"u":"animate.min.css","v":"5.6.2"},"video":{"u":"video.min.css","v":"5.6.2"},"audio":{"u":"audio.min.css","v":"5.6.2"},"drop":{"u":"dropdown.min.css","v":"5.6.2"},"lb":{"u":"lightbox.min.css","v":"5.6.2"},"t":{"u":"tooltip.min.css","v":"5.6.2"}},"menu_tooltips":[],"is_min":"1","wp_embed":"https://mtn.bmazaj.com/wp-includes/js/wp-embed.min.js","sw":{"site_url":"https://mtn.bmazaj.com","plugins_url":"plugins","sw_refresh":true},"theme_v":"5.6.0","theme_js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/js/themify.script.min.js","theme_url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack","menu_point":"1200","done":{"tb_parallax":true,"tf_search_form":true,"tb_image":true,"tb_image_left":true,"tb_image_right":true,"tb_style":true}};
     </script>
     <!--/noindex-->
     <!--googleon:all-->
-    <script nomodule defer
-        src="/front_assets/js/fallback.min.js">
-    </script>
-    <link rel="preload" href="/front_assets/css/style.css"
-        as="style" />
-    <link rel='stylesheet' id='themify-tiles-css'
-        href='/front_assets/css/style.css' media='all' />
-    <script defer="defer" src='/front_assets/js/main.min.js'
-        id='themify-main-script-js'></script>
-     {{-- <script
+    <script nomodule defer src="/front_assets/js/fallback.min.js"></script>
+    <link rel="preload" href="/front_assets/css/style.css" as="style" />
+    <link rel='stylesheet' id='themify-tiles-css' href='/front_assets/css/style.css' media='all' />
+    <script defer="defer" src='/front_assets/js/main.min.js' id='themify-main-script-js'></script>
+    {{-- <script
         src='https://mtn.bmazaj.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-contact-form-7-tracker.js?ver=1.15.2'
         id='gtm4wp-contact-form-7-tracker-js'></script> --}}
     <script id='themify-tiles-js-extra'>
@@ -986,10 +973,8 @@ var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/t
                 "size": "4"
             }]
         };
-
     </script>
-    <script defer="defer" src='/front_assets/js/script.js'
-        id='themify-tiles-js'></script>
+    <script defer="defer" src='/front_assets/js/script.js' id='themify-tiles-js'></script>
     <svg id="tf_svg" style="display:none">
         <defs>
             <symbol id="tf-fas-rss" viewBox="0 0 28 32">
@@ -1001,7 +986,6 @@ var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/t
                 .tf_fa.tf-fas-rss {
                     width: 0.875em
                 }
-
             </style>
         </defs>
     </svg>
@@ -1029,10 +1013,7 @@ var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/t
             "dateModified": "2022-06-04T14:22:35+00:00",
             "description": ""
         }]
-
     </script><!-- /SCHEMA END -->
 </body>
 
 </html>
-
-                

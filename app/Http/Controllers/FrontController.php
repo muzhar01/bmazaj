@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Admin\Audio;
+use App\Models\Admin\Logo;
 
 class FrontController extends Controller
 {
@@ -24,6 +25,7 @@ class FrontController extends Controller
      */
     public function playlist($id)
     {
+        $result['logo']=Logo::first();
         $result['audio']=Audio::where('category_id',$id)->get();
         return view('front.playlist',$result);
     }

@@ -6,8 +6,12 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminDashboard;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\AudioController;
+use App\Http\Controllers\Admin\ColorController;
+use App\Http\Controllers\Admin\LogoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FrontController;
+use App\Models\Admin\Logo;
+use App\Models\Admin\Color;
 
 use App\Models\Admin\Category;
 /*
@@ -22,6 +26,8 @@ use App\Models\Admin\Category;
 */
 
 Route::get('/', function () {
+    $result['color']=Color::first();
+    $result['logo']=Logo::first();
     $result['category']=Category::where('status','1')->get();
     return view('front.index',$result);
 });
@@ -35,6 +41,14 @@ Route::post('/admin/auth',[AdminController::class,'auth'])->name('admin-auth');
 Route::group(['middleware'=>'admin_auth'],function(){
     // Dashboard Route //////
     Route::get('admin/dashboard',[AdminDashboard::class,'index']);
+    // Logo Route //////
+    Route::get('admin/logo',[LogoController::class,'index'])->name('admin-logo');
+    Route::post('admin/logsubmit',[LogoController::class,'store'])->name('admin-logo-submit');
+    
+    // color Route //////
+    Route::get('admin/color',[ColorController::class,'index'])->name('admin-color');
+    Route::post('admin/colorsubmit',[ColorController::class,'store'])->name('admin-color-submit');
+
     // Category Route //////
     Route::get('admin/category',[CategoryController::class,'index'])->name('admin-category');
     Route::get('admin/addcategory',[CategoryController::class,'create'])->name('admin-addcategory');

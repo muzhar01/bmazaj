@@ -102,6 +102,16 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('admin-logo') }}"
+                                class="nav-link {{ request()->is('*logo*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-image"></i>
+                                <p>
+                                    Logo
+                                </p>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('admin-category') }}"
                                 class="nav-link {{ request()->is('*category*') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-th"></i>
@@ -116,6 +126,15 @@
                                 <i class="nav-icon fa fa-volume-up"></i>
                                 <p>
                                     Audio
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('admin-color') }}"
+                                class="nav-link {{ request()->is('*font color*') ? 'active' : '' }}">
+                                <i class="fa fa-paint-brush"></i>
+                                <p>
+                                    Font Color
                                 </p>
                             </a>
                         </li>
@@ -135,8 +154,8 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; {{ date('Y') }} <a href="https://admksolutions.com/"
-                    target="-blank">ADMKsolutions</a>.</strong>
+            <strong>Copyright &copy; {{ date('Y') }} <a href="javascript:;"
+                    target="-blank"> Ivorycell</a>.</strong>
             All rights reserved.
         </footer>
 
