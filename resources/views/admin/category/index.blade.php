@@ -58,7 +58,7 @@
                                         <th>Action</th>
                                     </tr>
                                 </thead>
-                                <tbody wire:sortable="updateCategoryOrder">
+                                <tbody id="sortable">
                                     @php
                                         $i = 0;
                                     @endphp
@@ -66,7 +66,7 @@
                                         @php
                                             $i++;
                                         @endphp
-                                        <tr wire:sortable.item="{{ $list->id }}" wire:key="list-{{ $list->id }}" wire:sortable.handle>
+                                        <tr>
                                             <td>{{ $i }}</td>
                                             <td>{{ $list->name }}</td>
                                             <td><img src="{{ asset('/storage/media/category/' . $list->image) }}"

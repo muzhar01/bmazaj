@@ -47,19 +47,20 @@
                         <!-- /.card-header -->
                         <div id="accordion">
                             @foreach ($category as $cat)
+                          
                                 <div class="card">
                                     <div class="card-header" id="heading_{{ $cat->id }}">
                                         <h5 class="mb-0">
                                             <button class="btn btn-link" data-toggle="collapse"
                                                 data-target="#collapse_{{ $cat->id }}" aria-expanded="true"
-                                                aria-controls="collapseOne">
+                                                aria-controls="collapse_{{ $cat->id }}">
                                                 {{ ucfirst($cat->name) }}
                                             </button>
                                         </h5>
                                     </div>
 
-                                    <div id="collapse_{{ $cat->id }}" class="collapse"
-                                        aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div id="collapse_{{ $cat->id }}" class="collapse {{ $loop->iteration == 1 ? 'show' : '' }}"
+                                        aria-labelledby="{{ $cat->name ?? 'category-heading' }}" data-parent="#accordion">
                                         <div class="card-body">
 
                                             <div class="card-body">
