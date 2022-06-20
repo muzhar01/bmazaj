@@ -12,7 +12,8 @@ class AudioController extends Controller
 {
     public function index()
     {
-        $result['audio']=Audio::all();
+        // $result['audio']=Audio::all();
+        $result['category']=Category::all();
         return view('admin.audio.index',$result);
     }
     public function create()

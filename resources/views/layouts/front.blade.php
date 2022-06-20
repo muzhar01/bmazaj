@@ -52,7 +52,11 @@
     </noscript>
     <style id="tf_lazy_common">
         /*chrome bug,prevent run transition on the page loading*/
-
+body{
+    background-image: url('{{ asset('front_assets/background/Mood-01.png') }}');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
         body:not(.page-loaded),
         body:not(.page-loaded) #header,
         body:not(.page-loaded) a,

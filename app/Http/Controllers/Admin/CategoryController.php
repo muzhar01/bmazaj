@@ -11,7 +11,7 @@ class CategoryController extends Controller
    
     public function index()
     {  
-        $result['category']=Category::all();
+        $result['category']=Category::orderBy('order_position','asc')->all();
         return view('admin.category.index',$result);
     }
 
@@ -48,12 +48,6 @@ class CategoryController extends Controller
         }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Admin\Category  $category
-     * @return \Illuminate\Http\Response
-     */
     public function status(Category $category,$status,$id)
     {
         $model=Category::find($id);
@@ -73,13 +67,6 @@ class CategoryController extends Controller
         return view('admin.category.edit',$category);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Admin\Category  $category
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, Category $category)
     {
         $model=Category::find($request->post('id'));
@@ -107,12 +94,6 @@ class CategoryController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Admin\Category  $category
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Category $category,$id)
     {
         $model=Category::find($id);
@@ -127,5 +108,12 @@ class CategoryController extends Controller
             session()->flash('success','Failed to delete Status');
             return redirect('admin/category');
         }
+    }
+    public function updateCategoryOrder($items){
+        foreach($items as $item){
+            Category::find($item['value'])->update(['order_position'=>$item['order']]);
+        }
+        session()->flash('success','Position sorted successfully');
+        return redirect('admin/category');
     }
 }
