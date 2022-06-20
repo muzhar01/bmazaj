@@ -22,7 +22,7 @@ class LogoController extends Controller
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg',
         ]);
-        $model=Logo::find(1);
+        $model=Logo::find(1) ?? new Logo();
         if($request->hasFile('image')){
             $image=$request->file('image');
             $ext=$image->extension();
