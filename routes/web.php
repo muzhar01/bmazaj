@@ -26,9 +26,9 @@ use App\Models\Admin\Category;
 */
 
 Route::get('/', function () {
-    $result['color']=Color::first();
-    $result['logo']=Logo::first();
-    $result['category']=Category::where('status','1')->get();
+    $result['color'] = Color::first();
+    $result['logo'] = Logo::first() ?? '';
+    $result['category'] = Category::where('status','1')->orderBy('order_position','asc')->get();
     return view('front.index',$result);
 });
 

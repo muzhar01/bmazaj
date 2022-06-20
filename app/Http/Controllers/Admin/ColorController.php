@@ -19,7 +19,7 @@ class ColorController extends Controller
         $request->validate([
             'color' => 'required',
         ]);
-        $model = Color::find(1);
+        $model = Color::find(1) ?? new Color();
         $model->color = $request->post('color');
         $model->save();
         if ($model->save()) {

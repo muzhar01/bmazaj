@@ -130,13 +130,13 @@
                     updatePosition(selectedData);
                 }
             }); 
-            function updatePosition(data){
+            function updatePosition(data_param){
                 $.ajax({
                     type: "POST",
                     url: "{{ route('update-category-orderPosition') }}",
                     data: {
                         "_token": "{{ csrf_token() }}",
-                        "allData":data
+                        "allData":data_param
                     },
                     success: function (response) {
                         $('#position_msg').append('<div class="alert alert-success alert-dismissible fade show" role="alert">'+response+'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');

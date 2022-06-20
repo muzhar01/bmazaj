@@ -110,11 +110,13 @@ class CategoryController extends Controller
         }
     }
     public function updatePosition(Request $request){
-        $allData=$request()->post('allData');
-        $i=1;
+        $allData = $request->post('allData');
+     
         foreach($allData as $key=>$val ){
-            Category::find($val)->update(['order_position'=>$i]);
-            $i++;
+            $category = Category::find($val);
+            $category->order_position = $key;
+            $category->update();
+          
         }
        
         return response()->json('Position Change Successfully');

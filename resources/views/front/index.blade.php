@@ -56,7 +56,7 @@
                                                 <div class="tile-inner">
                                                     <div class="tile-content">
                                                         <a href="{{ url('playlist/'.$list->id) }}">
-                                                        <h6 style="text-align: center;color:{{ $color->color }};important">
+                                                        <h6 style="text-align: center;color:{{ $color->color ?? "black" }};important">
                                                             <strong>{{ $list->description }}</strong>
                                                         </h6>
                                                         </a>
