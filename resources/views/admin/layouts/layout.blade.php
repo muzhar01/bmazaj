@@ -131,15 +131,6 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="{{ route('admin-color') }}"
-                                class="nav-link {{ request()->is('*font color*') ? 'active' : '' }}">
-                                <i class="fa fa-paint-brush"></i>
-                                <p>
-                                    Font Color
-                                </p>
-                            </a>
-                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

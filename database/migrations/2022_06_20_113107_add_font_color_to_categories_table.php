@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateColorsTable extends Migration
+class AddFontColorToCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateColorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('colors', function (Blueprint $table) {
-            $table->id();
-            $table->string('color');
-            $table->timestamps();
+        Schema::table('categories', function (Blueprint $table) {
+            
+            $table->string('font_color')->nullable();
         });
     }
 
@@ -27,6 +26,8 @@ class CreateColorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colors');
+        Schema::table('categories', function (Blueprint $table) {
+            $table->dropColumn('font_color');
+        });
     }
 }
