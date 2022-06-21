@@ -93,10 +93,10 @@
                                                                         height="100px" width="100px" alt=""></td>
                                                                 <td>{{ $list->description }}</td>
                                                                 <td>
-                                                                    <audio controls controlsList="nodownload"
+                                                                    <audio controls controlsList="nodownload" preload="none"
                                                                         onplay="pauseOthers(this);">
-                                                                        <source
-                                                                            src="{{ asset('/storage/media/audio/file/' . $list->audio) }}">
+                                                                        <source src="{{ asset('/storage/media/audio/file/' . $list->audio) }}">
+                                                                        Your browser does not support the default audio element.
                                                                     </audio>
                                                                 </td>
                                                                 <td>
