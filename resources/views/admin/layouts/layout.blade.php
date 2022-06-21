@@ -32,10 +32,17 @@
     <link rel="stylesheet" href="{{ asset('admin_assets/css/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('admin_assets/css/summernote-bs4.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('admin_assets/css/dataTables.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('admin_assets/css/custom.css')}}">
+    <link rel="stylesheet" href="{{ asset('admin_assets/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin_assets/css/custom.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        body{
+    background-image: url('{{ asset('admin_assets/Mood-01.png') }}');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -64,7 +71,7 @@
                         <i class="far fa-user"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <a href="#" class="dropdown-item">
+                        <a href="{{ route('admin-profile') }}" class="dropdown-item">
                             <i class="fas fa-user mr-2"></i> Profile
                         </a>
                         <div class="dropdown-divider"></div>
@@ -147,8 +154,8 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; {{ date('Y') }} <a href="javascript:;"
-                    target="-blank"> Ivorycell</a>.</strong>
+            <strong>Copyright &copy; {{ date('Y') }} <a href="javascript:;" target="-blank">
+                    Ivorycell</a>.</strong>
             All rights reserved.
         </footer>
 
@@ -204,11 +211,11 @@
     <script src="{{ asset('admin_assets/js/vfs_fonts.js') }}"></script>
 
     <script src="{{ asset('admin_assets/js/jszip.min.js') }}"></script>
-    
-    <script src="{{ asset('admin_assets/js/buttons.bootstrap4.min.js')}}"></script>
-    <script src="{{ asset('admin_assets/js/dataTables.buttons.min.js')}}"></script>
-    <script src="{{ asset('admin_assets/js/responsive.bootstrap4.min.js')}}"></script>
-    <script src="{{ asset('admin_assets/js/dataTables.responsive.min.js')}}"></script>
+
+    <script src="{{ asset('admin_assets/js/buttons.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/responsive.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('admin_assets/js/dataTables.responsive.min.js') }}"></script>
 
     <script>
         $(function() {

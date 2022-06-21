@@ -42,7 +42,11 @@ Route::group(['middleware'=>'admin_auth'],function(){
     // Logo Route //////
     Route::get('admin/logo',[LogoController::class,'index'])->name('admin-logo');
     Route::post('admin/logsubmit',[LogoController::class,'store'])->name('admin-logo-submit');
-    
+    ///Profile Route///
+    Route::get('admin/profile',[AdminController::class,'profile'])->name('admin-profile');
+    Route::post('admin/profile/update',[AdminController::class,'profileUpdate'])->name('admin-profile-update');
+    Route::post('admin/password/update',[AdminController::class,'updatePassword'])->name('admin-change-password');
+
     // Category Route //////
     Route::get('admin/category',[CategoryController::class,'index'])->name('admin-category');
     Route::get('admin/addcategory',[CategoryController::class,'create'])->name('admin-addcategory');
