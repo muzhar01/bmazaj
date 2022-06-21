@@ -5,12 +5,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Category</h1>
+                    <h1 class="m-0">Service Providers</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ url('admin/dashboard') }}">Home</a></li>
-                        <li class="breadcrumb-item active">Category</li>
+                        <li class="breadcrumb-item active">Service Providers</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -25,62 +25,59 @@
                     <div class="card">
                         <div class="card-header">
                             <div>
-                              <a href="{{ route('admin-addcategory') }}" class="btn btn-info float-right">Add Category</a>
+                              <a href="{{ route('sp-settings.create') }}" class="btn btn-info float-right">Add Service Provider</a>
                             </div>
                         </div>
+
                         @if(session()->has('success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                          {{ session('success') }}
-                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
+                          <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session('success') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
                         @endif
+
                         @if(session()->has('error'))
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                          {{ session('error') }}
-                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
+                          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            {{ session('error') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
                         @endif
-                        <div id="position_msg"></div>
+
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="catTable" class="table table-bordered table-hover">
+                            <table id="spTable" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th>Sr No.</th>
-                                        <th>Catgory</th>
+                                        <th>Name</th>
                                         <th>Image</th>
                                         <th>Description</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
+
                                 <tbody class="row_position">
-                                  @php
-                                  $i=0;
-                                @endphp
-                                    @foreach ($category as $list)
-                                    @php
-                                      $i++;
-                                    @endphp
-                                      <tr id="{{ $list->id }}">
+                                    @foreach ($sps as $sp)
+                                      <tr id="{{ $sp->id }}">
                                         <td>{{ $i }}</td>
-                                        <td>{{ $list->name }}</td>
-                                        <td><img src="{{ asset('/storage/media/category/'. $list->image) }}" height="200px" width="200px" alt=""></td>
-                                        <td>{{ $list->description }}</td>
+                                        <td>{{ $sp->name }}</td>
+                                        <td><img src="{{ asset('/storage/media/category/'. $sp->image) }}" height="200px" width="200px" alt=""></td>
+                                        <td>{{ $sp->description }}</td>
                                         <td>
                                           <div class="btn-group">
                                             <?php
-                                              if($list->status==1){
+                                              if($sp->status==1){
                                                 $class="success";
                                               }else{
                                                 $class="danger";
                                               }
                                             ?>
-                                            @if($list->status==1)
+                                            @if($sp->status==1)
                                               <button type="button" class="btn btn-success">Active</button>
                                             @else
                                               <button type="button" class="btn btn-danger">Dective</button>
@@ -89,8 +86,8 @@
                                               <span class="sr-only">Toggle Dropdown</span>
                                             </button>
                                             <div class="dropdown-menu" role="menu" style="">
-                                              <a class="dropdown-item" href="{{ url('admin/category/status/1/'.$list->id) }}">Active</a>
-                                              <a class="dropdown-item" href="{{ url('admin/category/status/0/'.$list->id) }}">Deactive</a>
+                                              <a class="dropdown-item" href="{{ url('admin/category/status/1/'.$sp->id) }}">Active</a>
+                                              <a class="dropdown-item" href="{{ url('admin/category/status/0/'.$sp->id) }}">Deactive</a>
                                             </div>
                                           </div>
                                         </td>
@@ -101,8 +98,8 @@
                                               <span class="sr-only">Toggle Dropdown</span>
                                             </button>
                                             <div class="dropdown-menu" role="menu">
-                                              <a class="dropdown-item" href="{{ url('admin/category/edit/'.$list->id) }}">Edit</a>
-                                              <a class="dropdown-item" href="{{ url('admin/category/delete/'.$list->id) }}">Delete</a>
+                                              <a class="dropdown-item" href="{{ url('admin/category/edit/'.$sp->id) }}">Edit</a>
+                                              <a class="dropdown-item" href="{{ url('admin/category/delete/'.$sp->id) }}">Delete</a>
                                             </div>
                                           </div>
                                         </td>
@@ -118,31 +115,5 @@
             </div>
         </div>
     </section>
-    <script>
-        $(document).ready(function () {
-            $('.row_position').sortable({
-                dealy:150,
-                stop:function(){
-                    var selectedData=new Array();
-                    $('.row_position>tr').each(function(){
-                        selectedData.push($(this).attr("id"));
-                    });
-                    updatePosition(selectedData);
-                }
-            }); 
-            function updatePosition(data_param){
-                $.ajax({
-                    type: "POST",
-                    url: "{{ route('update-category-orderPosition') }}",
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        "allData":data_param
-                    },
-                    success: function (response) {
-                        $('#position_msg').append('<div class="alert alert-success alert-dismissible fade show" role="alert">'+response+'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
-                    }
-                });
-            }
-        });
-    </script>
+
 @endsection

@@ -14,7 +14,8 @@ class SpSettingsController extends Controller
      */
     public function index()
     {
-        //
+        $sps = SpSettings::all();
+        return view('admin.sp_settings.index', $sps);
     }
 
     /**
