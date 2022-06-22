@@ -49,47 +49,45 @@
 
                         <!-- /.card-header -->
                         <div class="card-body">
+                        @if(count($sps) > 0)
                             <table id="spTable" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
                                         <th>Sr No.</th>
                                         <th>Name</th>
-                                        <th>Image</th>
-                                        <th>Description</th>
+                                        <th>Email/Username</th>
+                                        <th>Token</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
 
                                 <tbody class="row_position">
+
                                     @foreach ($sps as $sp)
+
                                       <tr id="{{ $sp->id }}">
-                                        <td>{{ $i }}</td>
-                                        <td>{{ $sp->name }}</td>
-                                        <td><img src="{{ asset('/storage/media/category/'. $sp->image) }}" height="200px" width="200px" alt=""></td>
-                                        <td>{{ $sp->description }}</td>
+                                        <td>{{ $loop->iteration ?? '' }}</td>
+                                        <td>{{ $sp->name ?? ''}}</td>
+                                        <td>{{ $sp->email }}</td>
+                                        <td>{{ $sp->token ? substr(($sp->token ?? ''), 0,8) . ' ...' : 'No token' }}</td>
                                         <td>
                                           <div class="btn-group">
-                                            <?php
-                                              if($sp->status==1){
-                                                $class="success";
-                                              }else{
-                                                $class="danger";
-                                              }
-                                            ?>
+                                            
                                             @if($sp->status==1)
                                               <button type="button" class="btn btn-success">Active</button>
                                             @else
-                                              <button type="button" class="btn btn-danger">Dective</button>
+                                              <button type="button" class="btn btn-danger">Deactive</button>
                                             @endif
-                                            <button type="button" class="btn btn-{{ $class }} dropdown-toggle dropdown-icon" data-toggle="dropdown" aria-expanded="false">
+                                            <button type="button" class="btn btn-{{ $sp->status == 1 ? 'success' : 'danger' }} dropdown-toggle dropdown-icon" data-toggle="dropdown" aria-expanded="false">
                                               <span class="sr-only">Toggle Dropdown</span>
                                             </button>
                                             <div class="dropdown-menu" role="menu" style="">
-                                              <a class="dropdown-item" href="{{ url('admin/category/status/1/'.$sp->id) }}">Active</a>
-                                              <a class="dropdown-item" href="{{ url('admin/category/status/0/'.$sp->id) }}">Deactive</a>
+                                              <a class="dropdown-item" href="{{ route('sp-settings.show',$sp->id) ."?status=1" }}">Active</a>
+                                              <a class="dropdown-item" href="{{ route('sp-settings.show',$sp->id) ."?status=0" }}">Deactive</a>
                                             </div>
                                           </div>
+
                                         </td>
                                         <td>
                                           <div class="btn-group">
@@ -98,8 +96,12 @@
                                               <span class="sr-only">Toggle Dropdown</span>
                                             </button>
                                             <div class="dropdown-menu" role="menu">
-                                              <a class="dropdown-item" href="{{ url('admin/category/edit/'.$sp->id) }}">Edit</a>
-                                              <a class="dropdown-item" href="{{ url('admin/category/delete/'.$sp->id) }}">Delete</a>
+                                              <a class="dropdown-item" href="{{ route('sp-settings.edit', $sp->id) }}">Edit</a>
+                                              <form action="{{ route('sp-settings.destroy', $sp->id) }}" method="post">
+                                                @csrf
+                                                @method('DELETE')
+                                                <a class="dropdown-item" href="#"><button class="border-0" type="submit">Delete</button></a>
+                                              </form>
                                             </div>
                                           </div>
                                         </td>
@@ -107,6 +109,10 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                          @else
+                            <h3 class="h3 text-center">No Recods</h3>
+                            <hr>
+                          @endif
                         </div>
                         <!-- /.card-body -->
                     </div>
