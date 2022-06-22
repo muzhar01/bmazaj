@@ -39,6 +39,8 @@ class CategoryController extends Controller
         }
         $model->description=$request->input('description');
         $model->status='1';
+        $model->order_position='0';
+        $model->font_color=$request->input('font_color');
         if($model->save()){
             $request->session()->flash('success','Category Added Successfully');
             return redirect('admin/category');
@@ -77,13 +79,14 @@ class CategoryController extends Controller
         ]);
         $model->name=$request->input('name');
         $model->color = $request->input('color');
-        if($request->hasFile('image')){
+        if ($request->hasFile('image')) {
             $image=$request->file('image');
             $ext=$image->extension();
             $image_name=time().'.'.$ext;
-            $image->storeAs('/public/media/category',$image_name);
+            $image->storeAs('/public/media/category', $image_name);
             $model->image=$image_name;
         }
+        $model->font_color=$request->input('font_color');
         $model->description=$request->input('description');
         if($model->save()){
             $request->session()->flash('success','Category Updated Successfully');

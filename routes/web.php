@@ -12,7 +12,6 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\SpSettingsController;
 use App\Models\Admin\Logo;
-use App\Models\Admin\Color;
 
 use App\Models\Admin\Category;
 /*
@@ -27,7 +26,6 @@ use App\Models\Admin\Category;
 */
 
 Route::get('/', function () {
-    $result['color'] = Color::first();
     $result['logo'] = Logo::first() ?? '';
     $result['category'] = Category::where('status','1')->orderBy('order_position','asc')->get();
     return view('front.index',$result);
@@ -45,10 +43,10 @@ Route::group(['middleware'=>'admin_auth'],function(){
     // Logo Route //////
     Route::get('admin/logo',[LogoController::class,'index'])->name('admin-logo');
     Route::post('admin/logsubmit',[LogoController::class,'store'])->name('admin-logo-submit');
-    
-    // color Route //////
-    Route::get('admin/color',[ColorController::class,'index'])->name('admin-color');
-    Route::post('admin/colorsubmit',[ColorController::class,'store'])->name('admin-color-submit');
+    ///Profile Route///
+    Route::get('admin/profile',[AdminController::class,'profile'])->name('admin-profile');
+    Route::post('admin/profile/update',[AdminController::class,'profileUpdate'])->name('admin-profile-update');
+    Route::post('admin/password/update',[AdminController::class,'updatePassword'])->name('admin-change-password');
 
     // Category Route //////
     Route::get('admin/category',[CategoryController::class,'index'])->name('admin-category');

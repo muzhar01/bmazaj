@@ -54,6 +54,14 @@
                                             <span class="error">{{ $errors->first('color') }}</span>
                                         @endif
                                     </div>
+                                    <div class="col-4">
+                                        <label for="color">Font Color</label>
+                                        <small> Font color for the flip card back</small>
+                                        <input id="color" type="color" name="font_color" class="form-control" value="{{ old('font_color') ?? '' }}" style="height:50px !important;">
+                                        @if ($errors->has('font_color'))
+                                            <span class="error">{{ $errors->first('font_color') }}</span>
+                                        @endif
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
