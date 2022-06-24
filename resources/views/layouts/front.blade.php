@@ -241,7 +241,7 @@ body{
         href="/front_assets/css/themify-2365787280.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
-    <link rel="preload" importance="high" href="/front_assets/css/animate.min.css" as="style">
+    <link rel="stylesheet" rel="preload" importance="high" href="/front_assets/css/animate.min.css" as="style">
     {{-- <link href="/front_assets/css/animate.min.css"> --}}
 
     <style id='global-styles-inline-css'>
@@ -1007,6 +1007,8 @@ body{
             "description": ""
         }]
     </script><!-- /SCHEMA END -->
+
+    @yield('scripts')
 </body>
 
 </html>

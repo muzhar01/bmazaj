@@ -395,7 +395,7 @@ if (document.querySelector('#simp')) {
   var simp_a_url = simp_playlist.querySelectorAll('[data-src]');
   var simp_a_index = 0;
   var simp_isPlaying = false;
-  var simp_isNext = false; //auto play
+  var simp_isNext = true; //auto play
   var simp_isRandom = false; //play random
   var simp_isRanext = false; //check if before random starts, simp_isNext value is true
   var simp_isStream = false; //radio streaming
@@ -423,6 +423,26 @@ if (document.querySelector('#simp')) {
   ap_simp.insertBefore(simp_player, simp_playlist);
   simp_startScript();
 }
+</script>
+
+<script>
+//$('document').unload(()=>{
+window.addEventListener("unload", ()=>{
+  if(simp_isPlaying){
+    let url = simp_audio.currentSrc;
+    let title = document.querySelector('.simp-active .simp-source').innerText ?? 'Play Audio';
+      //url = $('.simp-active .simp-source').data('src') ?? 'No audio';
+
+      localStorage.setItem('playing', url);
+      localStorage.setItem('title', title);
+
+  }else{
+    localStorage.setItem('playing', false);
+
+  }
+
+});
+
 </script>
 
 @endsection
