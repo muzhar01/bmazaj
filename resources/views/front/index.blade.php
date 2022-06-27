@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('content')
-
+<link rel="stylesheet" href="/front_assets/css/stickyaudioplayerjquery.min.css" >
 <!-- module_row -->
 <div data-lazy="1" class="module_row themify_builder_row tb_mgjo446 tf_clearfix">
     <div class="row_inner col_align_top col-count-1 tf_box tf_w tf_rel">
@@ -158,10 +158,44 @@ var el = document.querySelectorAll('.tf-tile.size-square-large');
 }
 changeAffect();
 
-setInterval(()=>{
-    changeAffect();
-}, 10000);
+//setInterval(()=>{
+//    changeAffect();
+//}, 10000);
 
 </script>
 
+@endsection
+
+@section('scripts')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/front_assets/js/stickyaudioplayerjquery.min.js"></script>
+    <script>
+        function homePlay(){
+            var player;
+               //let playing = false;
+            let playing = localStorage.getItem('playing') ?? false;
+            let title = localStorage.getItem('title') ?? 'Playing';
+                //console log
+                console.log('playing get item', playing);
+                console.log('Title get item', playing);
+            if(playing && playing != 'false'){
+                player = $('body').stickyAudioPlayer({
+                    url: playing,
+                    position:'bottom',
+                    text: title,
+                    image: '',
+                    maxWidth:1000,
+                    volume: 40
+                });
+
+            }else{
+                player = null;
+            }
+        };
+
+        $(document).ready(function(){
+            homePlay();
+        });
+
+    </script>
 @endsection

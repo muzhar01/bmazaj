@@ -138,6 +138,17 @@
                                 </p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('sp-settings.index') }}"
+                                class="nav-link {{ request()->is('*sp-settings*') ? 'active' : '' }}">
+                                <i class="nav-icon fa fa-building"></i>
+                                <p>
+                                    Service Providers
+                                </p>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\ColorController;
 use App\Http\Controllers\Admin\LogoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\SpSettingsController;
 use App\Models\Admin\Logo;
 
 use App\Models\Admin\Category;
@@ -64,7 +65,8 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/audio/edit/{id}',[AudioController::class,'edit']);
     Route::get('admin/audio/delete/{id}',[AudioController::class,'destroy']);
     Route::post('admin/audio/update',[AudioController::class,'update'])->name('admin-audio-update');
-    
+
+    Route::resource('admin/sp-settings', SpSettingsController::class);
 
     Route::get('/admin/logout',[AdminController::class,'logout'])->name('admin-logout');
 });

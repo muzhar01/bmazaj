@@ -241,9 +241,9 @@ body{
         href="/front_assets/css/themify-2365787280.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
-    <link rel="alternate" type="application/rss+xml" title="bmazaj &raquo; Feed" href="https://mtn.bmazaj.com/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="bmazaj &raquo; Comments Feed"
-        href="https://mtn.bmazaj.com/comments/feed/" />
+    <link rel="stylesheet" rel="preload" importance="high" href="/front_assets/css/animate.min.css" as="style">
+    {{-- <link href="/front_assets/css/animate.min.css"> --}}
+
     <style id='global-styles-inline-css'>
         body {
             --wp--preset--color--black: #000000;
@@ -493,18 +493,7 @@ body{
         }
     </style>
     <script src='/front_assets/js/jquery.min.js' id='jquery-core-js'></script>
-    <link rel="https://api.w.org/" href="https://mtn.bmazaj.com/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://mtn.bmazaj.com/wp-json/wp/v2/pages/17" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mtn.bmazaj.com/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
-        href="https://mtn.bmazaj.com/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 6.0" />
-    <link rel="canonical" href="https://mtn.bmazaj.com/" />
-    <link rel='shortlink' href='https://mtn.bmazaj.com/' />
-    <link rel="alternate" type="application/json+oembed"
-        href="https://mtn.bmazaj.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmtn.bmazaj.com%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="https://mtn.bmazaj.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmtn.bmazaj.com%2F&#038;format=xml" />
+
     <!-- Google Tag Manager for WordPress by gtm4wp.com -->
     <!-- GTM Container placement set to automatic -->
     <script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
@@ -789,14 +778,14 @@ body{
                 <header id="header" class="pagewidth tf_clearfix" itemscope="itemscope"
                     itemtype="https://schema.org/WPHeader">
                     <div class="header-padding">
-                        <div id="site-logo"><a href="https://mtn.bmazaj.com"
+                        <div id="site-logo"><a href="/"
                                 title="bmazaj"><span>Ivorycell</span></a>
                         </div>
                         <div id="site-description" class="site-description"><span>Ivorycell</span>
                         </div>
                         <div class="social-widget">
                             <div class="rss">
-                                <a class="hs-rss-link" href="https://mtn.bmazaj.com/feed/">
+                                <a class="hs-rss-link" href="/">
                                     <svg aria-label="RSS" role="img" class="tf_fa tf-fas-rss">
                                         <use href="#tf-fas-rss"></use>
                                     </svg><span class="screen-reader-text">RSS</span></a>
@@ -804,7 +793,7 @@ body{
                         </div>
                         <!-- /.social-widget -->
                         <div id="searchform-wrap">
-                            <form method="get" id="searchform" action="https://mtn.bmazaj.com/"> <i
+                            <form method="get" id="searchform" action="/"> <i
                                     class="icon-search"></i>
                                 <input type="text" name="s" id="s" title="Search"
                                     value="" />
@@ -924,7 +913,7 @@ body{
 
 
                 <div class="footer-text tf_clearfix">
-                    <div class="one">&copy; <a href="https://mtn.bmazaj.com">bmazaj</a> 2022</div>
+                    <div class="one">&copy; <a href="/">bmazaj</a> 2022</div>
                     <div class="two">Powered by <a href="javascript:;" target="_blank">Ivorycell</a></div>
                 </div>
                 <!-- /footer-text -->
@@ -941,9 +930,9 @@ body{
     <!--googleoff:all-->
     <!--noindex-->
     <script type="text/template" id="tf_vars">
-        var tbLocalScript = {"builder_url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder","js_modules":{"b":{"u":"/js/themify.builder.script.min.js","v":"5.6.2"},"sh":{"u":"/js/themify.scroll-highlight.min.js","v":"5.6.2"},"sty":{"u":"sticky.min.js","v":"5.6.2"}},"breakpoints":{"tablet_landscape":[769,1024],"tablet":[481,768],"mobile":480},"fullwidth_support":"","scrollHighlight":{"speed":900.009999999999990905052982270717620849609375},"addons":{"bgzs":{"match":".builder-zoom-scrolling","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/bgzoom_scroll.js"},"bgzm":{"match":".builder-zooming","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/bgzoom.js"},"p":{"match":".builder-parallax-scrolling","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/parallax.js"},"fwv":{"match":"[data-tbfullwidthvideo]","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/fullwidthvideo.js"},"fwr":{"match":".fullwidth.module_row,.fullwidth_row_container.module_row","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/fullwidthRows.js"},"bgs":{"selector":":scope>.tb_slider","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/backgroundSlider.js"},"rd":{"selector":".module-text-more","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/readMore.js"},"cl":{"selector":"[data-tb_link]","js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/clickableComponent.js"},"fr":{"match":".tb_row_frame_wrap","css":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/frames.css"},"bgz":{"match":".themify-bg-zoom","css":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/bg-zoom.css"},"cv":{"selector":".builder_row_cover","css":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/cover.css"}}};
+        var tbLocalScript = {"builder_url":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder","js_modules":{"b":{"u":"/js/themify.builder.script.min.js","v":"5.6.2"},"sh":{"u":"/js/themify.scroll-highlight.min.js","v":"5.6.2"},"sty":{"u":"sticky.min.js","v":"5.6.2"}},"breakpoints":{"tablet_landscape":[769,1024],"tablet":[481,768],"mobile":480},"fullwidth_support":"","scrollHighlight":{"speed":900.009999999999990905052982270717620849609375},"addons":{"bgzs":{"match":".builder-zoom-scrolling","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/bgzoom_scroll.js"},"bgzm":{"match":".builder-zooming","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/bgzoom.js"},"p":{"match":".builder-parallax-scrolling","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/parallax.js"},"fwv":{"match":"[data-tbfullwidthvideo]","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/fullwidthvideo.js"},"fwr":{"match":".fullwidth.module_row,.fullwidth_row_container.module_row","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/fullwidthRows.js"},"bgs":{"selector":":scope>.tb_slider","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/backgroundSlider.js"},"rd":{"selector":".module-text-more","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/readMore.js"},"cl":{"selector":"[data-tb_link]","js":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/js/modules/clickableComponent.js"},"fr":{"match":".tb_row_frame_wrap","css":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/frames.css"},"bgz":{"match":".themify-bg-zoom","css":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/bg-zoom.css"},"cv":{"selector":".builder_row_cover","css":"https://bmazaj.com/wp-content/themes/themify-stack/themify/themify-builder/css/modules/cover.css"}}};
     var themifyScript = {"expand":"<i class=\"ti-angle-down\" title=\"Expand\"><\/i>","collapse":"<i class=\"ti-close\" title=\"Collapse\"><\/i>","infiniteEnable":"0"};
-    var themify_vars = {"version":"5.6.2","url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/themify","wp":"6.0","ajax_url":"https://mtn.bmazaj.com/wp-admin/admin-ajax.php","includesURL":"https://mtn.bmazaj.com/wp-includes/","emailSub":"Check this out!","nop":"Sorry, no posts found.","lightbox":{"contentImagesAreas":".type-gallery","i18n":{"tCounter":"%curr% of %total%"}},"s_v":"5.3.9","js_modules":{"fxh":{"u":"fixedheader.min.js","v":"5.6.2"},"lb":{"u":"lightbox.min.js","v":"5.6.2"},"gal":{"u":"themify.gallery.min.js","v":"5.6.2"},"sw":{"u":"swiper/swiper.min.js","v":"5.6.2"},"tc":{"u":"themify.carousel.min.js","v":"5.6.2"},"map":{"u":"map.min.js","v":"5.6.2"},"at":{"u":"autoTiles.min.js","v":"5.6.2"},"iso":{"u":"isotop.min.js","v":"5.6.2"},"is":{"u":"jquery.isotope.min.js","v":"5.6.2"},"inf":{"u":"infinite.min.js","v":"5.6.2"},"lax":{"u":"lax.min.js","v":"5.6.2"},"lx":{"u":"themify.lax.min.js","v":"5.6.2"},"video":{"u":"video-player.min.js","v":"5.6.2"},"audio":{"u":"audio-player.min.js","v":"5.6.2"},"side":{"u":"themify.sidemenu.min.js","v":"5.6.2"},"edge":{"u":"edge.Menu.min.js","v":"5.6.2"},"wow":{"u":"tf_wow.min.js","v":"5.6.2"},"sharer":{"u":"sharer.min.js","v":"5.6.2"},"mega":{"u":"megamenu.js","v":"5.6.2"},"drop":{"u":"themify.dropdown.min.js","v":"5.6.2"},"wc":{"u":"wc.min.js","v":"5.6.2"},"as":{"u":"ajax-search.min.js","v":"5.6.2"},"t":{"u":"tooltip.min.js","v":"5.6.2"}},"css_modules":{"sw":{"u":"swiper/swiper.min.css","v":"5.6.2"},"an":{"u":"animate.min.css","v":"5.6.2"},"video":{"u":"video.min.css","v":"5.6.2"},"audio":{"u":"audio.min.css","v":"5.6.2"},"drop":{"u":"dropdown.min.css","v":"5.6.2"},"lb":{"u":"lightbox.min.css","v":"5.6.2"},"t":{"u":"tooltip.min.css","v":"5.6.2"}},"menu_tooltips":[],"is_min":"1","wp_embed":"https://mtn.bmazaj.com/wp-includes/js/wp-embed.min.js","sw":{"site_url":"https://mtn.bmazaj.com","plugins_url":"plugins","sw_refresh":true},"theme_v":"5.6.0","theme_js":"https://mtn.bmazaj.com/wp-content/themes/themify-stack/js/themify.script.min.js","theme_url":"https://mtn.bmazaj.com/wp-content/themes/themify-stack","menu_point":"1200","done":{"tb_parallax":true,"tf_search_form":true,"tb_image":true,"tb_image_left":true,"tb_image_right":true,"tb_style":true}};
+    var themify_vars = {"version":"5.6.2","url":"/front_assets","wp":"6.0","ajax_url":"/front_assets","includesURL":"/front_assets","emailSub":"Check this out!","nop":"Sorry, no posts found.","lightbox":{"contentImagesAreas":".type-gallery","i18n":{"tCounter":"%curr% of %total%"}},"s_v":"5.3.9","js_modules":{"fxh":{"u":"fixedheader.min.js","v":"5.6.2"},"lb":{"u":"lightbox.min.js","v":"5.6.2"},"gal":{"u":"themify.gallery.min.js","v":"5.6.2"},"sw":{"u":"swiper/swiper.min.js","v":"5.6.2"},"tc":{"u":"themify.carousel.min.js","v":"5.6.2"},"map":{"u":"map.min.js","v":"5.6.2"},"at":{"u":"autoTiles.min.js","v":"5.6.2"},"iso":{"u":"isotop.min.js","v":"5.6.2"},"is":{"u":"jquery.isotope.min.js","v":"5.6.2"},"inf":{"u":"infinite.min.js","v":"5.6.2"},"lax":{"u":"lax.min.js","v":"5.6.2"},"lx":{"u":"themify.lax.min.js","v":"5.6.2"},"video":{"u":"video-player.min.js","v":"5.6.2"},"audio":{"u":"audio-player.min.js","v":"5.6.2"},"side":{"u":"themify.sidemenu.min.js","v":"5.6.2"},"edge":{"u":"edge.Menu.min.js","v":"5.6.2"},"wow":{"u":"tf_wow.min.js","v":"5.6.2"},"sharer":{"u":"sharer.min.js","v":"5.6.2"},"mega":{"u":"megamenu.js","v":"5.6.2"},"drop":{"u":"themify.dropdown.min.js","v":"5.6.2"},"wc":{"u":"wc.min.js","v":"5.6.2"},"as":{"u":"ajax-search.min.js","v":"5.6.2"},"t":{"u":"tooltip.min.js","v":"5.6.2"}},"css_modules":{"sw":{"u":"swiper/swiper.min.css","v":"5.6.2"},"an":{"u":"animate.min.css","v":"5.6.2"},"video":{"u":"video.min.css","v":"5.6.2"},"audio":{"u":"audio.min.css","v":"5.6.2"},"drop":{"u":"dropdown.min.css","v":"5.6.2"},"lb":{"u":"lightbox.min.css","v":"5.6.2"},"t":{"u":"tooltip.min.css","v":"5.6.2"}},"menu_tooltips":[],"is_min":"1","wp_embed":"/","sw":{"site_url":"/","plugins_url":"plugins","sw_refresh":true},"theme_v":"5.6.0","theme_js":"front_assets/js/themify.script.min.js","theme_url":"/","menu_point":"1200","done":{"tb_parallax":true,"tf_search_form":true,"tb_image":true,"tb_image_left":true,"tb_image_right":true,"tb_style":true}};
     </script>
     <!--/noindex-->
     <!--googleon:all-->
@@ -952,15 +941,15 @@ body{
     <link rel='stylesheet' id='themify-tiles-css' href='/front_assets/css/style.css' media='all' />
     <script defer="defer" src='/front_assets/js/main.min.js' id='themify-main-script-js'></script>
     {{-- <script
-        src='https://mtn.bmazaj.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-contact-form-7-tracker.js?ver=1.15.2'
+        src='https://bmazaj.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-contact-form-7-tracker.js?ver=1.15.2'
         id='gtm4wp-contact-form-7-tracker-js'></script> --}}
     <script id='themify-tiles-js-extra'>
         var ThemifyTiles = {
             "ajax_nonce": "b9b1167049",
             "version": "1.3.0",
-            "url": "https:\/\/mtn.bmazaj.com\/wp-content\/plugins\/themify-tiles\/",
-            "ajax_url": "https:\/\/mtn.bmazaj.com\/wp-admin\/admin-ajax.php",
-            "includes_url": "https:\/\/mtn.bmazaj.com\/wp-includes\/",
+            "url": "https:\/\/bmazaj.com\/wp-content\/plugins\/themify-tiles\/",
+            "ajax_url": "https:\/\/bmazaj.com\/wp-admin\/admin-ajax.php",
+            "includes_url": "https:\/\/bmazaj.com\/wp-includes\/",
             "networkError": "Unknown network error. Please try again later.",
             "termSeparator": ", ",
             "galleryFadeSpeed": "300",
@@ -999,10 +988,10 @@ body{
         [{
             "@context": "https:\/\/schema.org",
             "@type": "WebSite",
-            "url": "https:\/\/mtn.bmazaj.com",
+            "url": "https:\/\/bmazaj.com",
             "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https:\/\/mtn.bmazaj.com?s={search_term_string}",
+                "target": "https:\/\/bmazaj.com?s={search_term_string}",
                 "query-input": "required name=search_term_string"
             }
         }, {
@@ -1010,7 +999,7 @@ body{
             "@type": "WebPage",
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https:\/\/mtn.bmazaj.com\/"
+                "@id": "https:\/\/bmazaj.com\/"
             },
             "headline": "Home",
             "datePublished": "2022-05-28T13:54:48+00:00",
@@ -1018,6 +1007,8 @@ body{
             "description": ""
         }]
     </script><!-- /SCHEMA END -->
+
+    @yield('scripts')
 </body>
 
 </html>
